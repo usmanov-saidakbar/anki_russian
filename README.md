@@ -2,6 +2,8 @@
 
 A flashcard app for learning Russian vocabulary up to B2, with spaced repetition and word tests. It is a plain static site: open `public/index.html` or host the `public/` folder anywhere.
 
+**Live:** https://anki-russian.onrender.com/
+
 - **6,746 words from A1 to B2**, in the order of the Kelly project's Russian list.
 - **169 data-engineering and IT terms**: after the first 60 words, every fifth new word is one of them.
 - **Your own words**: type `'` after the stressed vowel (`доро'жка` becomes `доро́жка`).
