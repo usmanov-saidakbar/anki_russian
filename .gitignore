@@ -1,0 +1,8 @@
+scripts/src/
+scripts/dl/
+scripts/preview/
+scripts/shots2/
+scripts/chrome-profile/
+scripts/venv/
+scripts/*.log
+.DS_Store

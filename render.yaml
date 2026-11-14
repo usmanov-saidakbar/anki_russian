@@ -1,0 +1,7 @@
+# Render Blueprint: a free static site that serves the public/ folder. Nothing to build.
+services:
+  - type: web
+    name: anki-russian
+    runtime: static
+    buildCommand: echo "nothing to build"
+    staticPublishPath: ./public

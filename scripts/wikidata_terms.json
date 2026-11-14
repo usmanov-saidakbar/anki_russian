@@ -1,0 +1,877 @@
+[
+{
+"qid": "Q858810",
+"enwiki": "Big data",
+"ruwiki": "Большие данные",
+"en": "big data",
+"ru": "большие данные"
+},
+{
+"qid": "Q1988917",
+"enwiki": "Data analysis",
+"ruwiki": "Анализ данных",
+"en": "data analysis",
+"ru": "анализ данных"
+},
+{
+"qid": "Q104659521",
+"enwiki": "Data engineering",
+"ruwiki": null,
+"en": "data engineering",
+"ru": "Инженерия данных"
+},
+{
+"qid": "Q2374463",
+"enwiki": "Data science",
+"ruwiki": "Наука о данных",
+"en": "data science",
+"ru": "наука о данных"
+},
+{
+"qid": "Q1172284",
+"enwiki": "Data set",
+"ruwiki": "Набор данных",
+"en": "data set",
+"ru": "набор данных"
+},
+{
+"qid": "Q20707560",
+"enwiki": "Data lake",
+"ruwiki": null,
+"en": "data lake",
+"ru": null
+},
+{
+"qid": "Q1061166",
+"enwiki": "Data mart",
+"ruwiki": "Витрина данных",
+"en": "data mart",
+"ru": "Витрина данных"
+},
+{
+"qid": "Q1276130",
+"enwiki": "Extract, transform, load",
+"ruwiki": "ETL",
+"en": "extract, transform, load",
+"ru": "ETL"
+},
+{
+"qid": "Q1192422",
+"enwiki": "Pipeline (computing)",
+"ruwiki": null,
+"en": "pipeline",
+"ru": null
+},
+{
+"qid": "Q2006448",
+"enwiki": "Stream processing",
+"ruwiki": null,
+"en": "stream processing",
+"ru": null
+},
+{
+"qid": "Q661613",
+"enwiki": "Batch processing",
+"ruwiki": null,
+"en": "batch processing",
+"ru": "пакетная обработка"
+},
+{
+"qid": "Q1172480",
+"enwiki": "Data model",
+"ruwiki": "Модель данных",
+"en": "data model",
+"ru": "модель данных"
+},
+{
+"qid": "Q1757694",
+"enwiki": "Data quality",
+"ruwiki": "Качество данных",
+"en": "data quality",
+"ru": "качество данных"
+},
+{
+"qid": "Q872685",
+"enwiki": "Data governance",
+"ruwiki": null,
+"en": "data governance",
+"ru": "руководство данными"
+},
+{
+"qid": "Q386824",
+"enwiki": "Data integration",
+"ruwiki": "Интеграция данных",
+"en": "data integration",
+"ru": "интеграция данных"
+},
+{
+"qid": "Q1172378",
+"enwiki": "Data cleansing",
+"ruwiki": "Очистка данных",
+"en": "data cleansing",
+"ru": "очистка данных"
+},
+{
+"qid": "Q3306762",
+"enwiki": "Data validation",
+"ruwiki": "Валидация данных",
+"en": "data validation",
+"ru": "Валидация данных"
+},
+{
+"qid": "Q1932543",
+"enwiki": "Data migration",
+"ruwiki": null,
+"en": "data migration",
+"ru": null
+},
+{
+"qid": "Q461671",
+"enwiki": "Data integrity",
+"ruwiki": "Целостность информации",
+"en": "data integrity",
+"ru": "целостность информации"
+},
+{
+"qid": "Q1508721",
+"enwiki": "Referential integrity",
+"ruwiki": "Ссылочная целостность",
+"en": "referential integrity",
+"ru": "Ссылочная целостность"
+},
+{
+"qid": "Q180160",
+"enwiki": "Metadata",
+"ruwiki": "Метаданные",
+"en": "metadata",
+"ru": "метаданные"
+},
+{
+"qid": "Q384093",
+"enwiki": "Master data",
+"ruwiki": "Мастер-данные",
+"en": "master data",
+"ru": "Мастер-данные"
+},
+{
+"qid": "Q632285",
+"enwiki": "Database schema",
+"ruwiki": "Схема базы данных",
+"en": "database schema",
+"ru": "Схема базы данных"
+},
+{
+"qid": "Q1331138",
+"enwiki": "Star schema",
+"ruwiki": "Схема звезды",
+"en": "star schema",
+"ru": "Схема звезды"
+},
+{
+"qid": "Q1345076",
+"enwiki": "Snowflake schema",
+"ruwiki": "Схема снежинки",
+"en": "snowflake schema",
+"ru": "Схема снежинки"
+},
+{
+"qid": "Q1972137",
+"enwiki": "Fact table",
+"ruwiki": "Таблица фактов",
+"en": "fact table",
+"ru": "Таблица фактов"
+},
+{
+"qid": "Q4449270",
+"enwiki": "Dimension (data warehouse)",
+"ruwiki": "Таблица измерений",
+"en": "dimension",
+"ru": "Таблица измерений"
+},
+{
+"qid": "Q370562",
+"enwiki": "Slowly changing dimension",
+"ruwiki": "Медленно меняющееся измерение",
+"en": "slowly changing dimension",
+"ru": "Медленно меняющиеся измерения"
+},
+{
+"qid": "Q5071831",
+"enwiki": "Change data capture",
+"ruwiki": "Захват изменений",
+"en": "change data capture",
+"ru": "Захват изменения данных"
+},
+{
+"qid": "Q642514",
+"enwiki": "Online analytical processing",
+"ruwiki": "OLAP",
+"en": "online analytical processing",
+"ru": "OLAP"
+},
+{
+"qid": "Q1501395",
+"enwiki": "Online transaction processing",
+"ruwiki": "OLTP",
+"en": "online transaction processing",
+"ru": "OLTP"
+},
+{
+"qid": "Q255215",
+"enwiki": "Partition (database)",
+"ruwiki": "Секционирование",
+"en": "partition",
+"ru": "Секционирование"
+},
+{
+"qid": "Q13424607",
+"enwiki": "Shard (database architecture)",
+"ruwiki": "Сегментирование (базы данных)",
+"en": "shard",
+"ru": "Шардирование"
+},
+{
+"qid": "Q1332873",
+"enwiki": "Replication (computing)",
+"ruwiki": "Репликация (вычислительная техника)",
+"en": "data replication",
+"ru": "репликация"
+},
+{
+"qid": "Q278425",
+"enwiki": "Table (database)",
+"ruwiki": "Таблица (база данных)",
+"en": "database table",
+"ru": "таблица"
+},
+{
+"qid": "Q2102543",
+"enwiki": "Column (database)",
+"ruwiki": "Столбец (база данных)",
+"en": "column",
+"ru": "столбец"
+},
+{
+"qid": "Q1366302",
+"enwiki": "Row (database)",
+"ruwiki": "Строка (база данных)",
+"en": "row",
+"ru": "запись"
+},
+{
+"qid": "Q1329910",
+"enwiki": "View (SQL)",
+"ruwiki": "Представление (базы данных)",
+"en": "view",
+"ru": "представление"
+},
+{
+"qid": "Q2003535",
+"enwiki": "Join (SQL)",
+"ruwiki": "Join (SQL)",
+"en": "JOIN",
+"ru": "Join"
+},
+{
+"qid": "Q580427",
+"enwiki": "Database index",
+"ruwiki": "Индекс (базы данных)",
+"en": "database index",
+"ru": "индекс"
+},
+{
+"qid": "Q934729",
+"enwiki": "Primary key",
+"ruwiki": "Первичный ключ",
+"en": "primary key",
+"ru": "первичный ключ"
+},
+{
+"qid": "Q1056760",
+"enwiki": "Foreign key",
+"ruwiki": "Внешний ключ",
+"en": "foreign key",
+"ru": "внешний ключ"
+},
+{
+"qid": "Q339072",
+"enwiki": "Database normalization",
+"ruwiki": "Нормальная форма",
+"en": "database normalisation",
+"ru": "Нормальная форма"
+},
+{
+"qid": "Q1189732",
+"enwiki": "Denormalization",
+"ruwiki": "Денормализация",
+"en": "denormalization",
+"ru": "Денормализация"
+},
+{
+"qid": "Q848010",
+"enwiki": "Database transaction",
+"ruwiki": "Транзакция (информатика)",
+"en": "database transaction",
+"ru": "Транзакция"
+},
+{
+"qid": "Q846619",
+"enwiki": "Stored procedure",
+"ruwiki": "Хранимая процедура",
+"en": "stored procedure",
+"ru": "Хранимая процедура"
+},
+{
+"qid": "Q835769",
+"enwiki": "Database trigger",
+"ruwiki": "Триггер (базы данных)",
+"en": "database trigger",
+"ru": "Триггер"
+},
+{
+"qid": "Q4115063",
+"enwiki": "Aggregate function",
+"ruwiki": null,
+"en": "aggregate function",
+"ru": "Агрегатные функции"
+},
+{
+"qid": "Q24898611",
+"enwiki": "Window function (SQL)",
+"ruwiki": null,
+"en": "window function",
+"ru": "Оконные функции"
+},
+{
+"qid": "Q371029",
+"enwiki": "Null (SQL)",
+"ruwiki": "NULL (SQL)",
+"en": "NULL",
+"ru": "NULL"
+},
+{
+"qid": "Q190087",
+"enwiki": "Data type",
+"ruwiki": "Тип данных",
+"en": "data type",
+"ru": "тип переменной"
+},
+{
+"qid": "Q2919848",
+"enwiki": "Query optimization",
+"ruwiki": "Оптимизация запросов СУБД",
+"en": "query optimization",
+"ru": "оптимизация запросов СУБД"
+},
+{
+"qid": "Q784232",
+"enwiki": "Query plan",
+"ruwiki": "План выполнения запроса",
+"en": "query plan",
+"ru": "План выполнения запроса"
+},
+{
+"qid": "Q47607",
+"enwiki": "SQL",
+"ruwiki": "SQL",
+"en": "SQL",
+"ru": null
+},
+{
+"qid": "Q82231",
+"enwiki": "NoSQL",
+"ruwiki": "NoSQL",
+"en": "NoSQL database management system",
+"ru": "NoSQL"
+},
+{
+"qid": "Q183427",
+"enwiki": "Hash function",
+"ruwiki": "Хеш-функция",
+"en": "hash function",
+"ru": "хеш-функция"
+},
+{
+"qid": "Q2493",
+"enwiki": "Data compression",
+"ruwiki": "Сжатие данных",
+"en": "data compression",
+"ru": "сжатие данных"
+},
+{
+"qid": "Q1127410",
+"enwiki": "Serialization",
+"ruwiki": "Сериализация",
+"en": "serialization",
+"ru": "сериализация"
+},
+{
+"qid": "Q935809",
+"enwiki": "Comma-separated values",
+"ruwiki": "CSV",
+"en": "comma-separated values",
+"ru": "CSV"
+},
+{
+"qid": "Q206637",
+"enwiki": "Computer cluster",
+"ruwiki": "Кластер (группа компьютеров)",
+"en": "computer cluster",
+"ru": "серверный кластер"
+},
+{
+"qid": "Q180634",
+"enwiki": "Distributed computing",
+"ruwiki": "Распределённые вычисления",
+"en": "distributed computing",
+"ru": "распределённые вычисления"
+},
+{
+"qid": "Q232661",
+"enwiki": "Parallel computing",
+"ruwiki": "Параллельные вычислительные системы",
+"en": "parallel computing",
+"ru": "параллельные вычисления"
+},
+{
+"qid": "Q483639",
+"enwiki": "Cloud computing",
+"ruwiki": "Облачные вычисления",
+"en": "cloud computing",
+"ru": "облачные вычисления"
+},
+{
+"qid": "Q192726",
+"enwiki": "Virtual machine",
+"ruwiki": "Виртуальная машина",
+"en": "virtual machine",
+"ru": "виртуальная машина"
+},
+{
+"qid": "Q107630377",
+"enwiki": "Containerization (computing)",
+"ruwiki": null,
+"en": "containerization",
+"ru": null
+},
+{
+"qid": "Q727490",
+"enwiki": "Scalability",
+"ruwiki": "Масштабируемость",
+"en": "scalability",
+"ru": "масштабируемость"
+},
+{
+"qid": "Q3140932",
+"enwiki": "Fault tolerance",
+"ruwiki": "Отказоустойчивость",
+"en": "fault tolerance",
+"ru": "отказоустойчивость"
+},
+{
+"qid": "Q575614",
+"enwiki": "Load balancing (computing)",
+"ruwiki": "Балансировка нагрузки",
+"en": "load balancing",
+"ru": "Балансировка нагрузки"
+},
+{
+"qid": "Q1065525",
+"enwiki": "Message queue",
+"ruwiki": "Очередь сообщений",
+"en": "message queue",
+"ru": "Очередь сообщений"
+},
+{
+"qid": "Q1071360",
+"enwiki": "Publish–subscribe pattern",
+"ruwiki": "Издатель — подписчик",
+"en": "publish–subscribe pattern",
+"ru": "Издатель-подписчик"
+},
+{
+"qid": "Q991296",
+"enwiki": "Event-driven architecture",
+"ruwiki": "Событийно-ориентированная архитектура",
+"en": "event-driven architecture",
+"ru": "событийно-ориентированная архитектура"
+},
+{
+"qid": "Q18344624",
+"enwiki": "Microservices",
+"ruwiki": "Микросервисная архитектура",
+"en": "microservices",
+"ru": "микросервисы"
+},
+{
+"qid": "Q165194",
+"enwiki": "API",
+"ruwiki": "API",
+"en": "application programming interface",
+"ru": "интерфейс программирования приложений"
+},
+{
+"qid": "Q368988",
+"enwiki": "Idempotence",
+"ruwiki": "Идемпотентность",
+"en": "idempotence",
+"ru": "идемпотентность"
+},
+{
+"qid": "Q1123036",
+"enwiki": "Scheduling (computing)",
+"ruwiki": "Диспетчер операционной системы",
+"en": "scheduling",
+"ru": "диспетчер операционной системы"
+},
+{
+"qid": "Q627335",
+"enwiki": "Workflow",
+"ruwiki": "Поток работ",
+"en": "workflow",
+"ru": "поток работ"
+},
+{
+"qid": "Q2670993",
+"enwiki": "Orchestration (computing)",
+"ruwiki": "Оркестровка (ИТ)",
+"en": "orchestration",
+"ru": "оркестровка"
+},
+{
+"qid": "Q443749",
+"enwiki": "Deadlock",
+"ruwiki": "Deadlock",
+"en": "Deadlock",
+"ru": "Deadlock"
+},
+{
+"qid": "Q616554",
+"enwiki": "Race condition",
+"ruwiki": "Состояние гонки",
+"en": "race condition",
+"ru": "состояние гонки"
+},
+{
+"qid": "Q751740",
+"enwiki": "Memory leak",
+"ruwiki": "Утечка памяти",
+"en": "memory leak",
+"ru": "Утечка памяти"
+},
+{
+"qid": "Q322202",
+"enwiki": "Garbage collection (computer science)",
+"ruwiki": "Сборка мусора",
+"en": "garbage collection",
+"ru": "Сборка мусора"
+},
+{
+"qid": "Q189439",
+"enwiki": "Version control",
+"ruwiki": null,
+"en": "version control",
+"ru": "управление версиями"
+},
+{
+"qid": "Q965769",
+"enwiki": "Continuous integration",
+"ruwiki": "Непрерывная интеграция",
+"en": "continuous integration",
+"ru": "непрерывная интеграция"
+},
+{
+"qid": "Q2297740",
+"enwiki": "Software deployment",
+"ruwiki": "Развёртывание программного обеспечения",
+"en": "software deployment",
+"ru": "Внедрение программного обеспечения"
+},
+{
+"qid": "Q188522",
+"enwiki": "Software testing",
+"ruwiki": "Тестирование программного обеспечения",
+"en": "software testing",
+"ru": "тестирование программного обеспечения"
+},
+{
+"qid": "Q907375",
+"enwiki": "Unit testing",
+"ruwiki": "Модульное тестирование",
+"en": "unit testing",
+"ru": "модульное тестирование"
+},
+{
+"qid": "Q917415",
+"enwiki": "Regression testing",
+"ruwiki": "Регрессионное тестирование",
+"en": "regression testing",
+"ru": "Регрессионное тестирование"
+},
+{
+"qid": "Q1342704",
+"enwiki": "Code review",
+"ruwiki": "Просмотр кода",
+"en": "code review",
+"ru": "код-ревью"
+},
+{
+"qid": "Q116877",
+"enwiki": "Code refactoring",
+"ruwiki": "Рефакторинг",
+"en": "software refactoring",
+"ru": "рефакторинг"
+},
+{
+"qid": "Q1532172",
+"enwiki": "Technical debt",
+"ruwiki": "Технический долг",
+"en": "technical debt",
+"ru": "технический долг"
+},
+{
+"qid": "Q128751",
+"enwiki": "Source code",
+"ruwiki": "Исходный код",
+"en": "source code",
+"ru": "исходный код"
+},
+{
+"qid": "Q9143",
+"enwiki": "Programming language",
+"ruwiki": "Язык программирования",
+"en": "programming language",
+"ru": "язык программирования"
+},
+{
+"qid": "Q183065",
+"enwiki": "Interpreter (computing)",
+"ruwiki": "Интерпретатор",
+"en": "interpreter",
+"ru": "интерпретатор"
+},
+{
+"qid": "Q188860",
+"enwiki": "Library (computing)",
+"ruwiki": "Библиотека (программирование)",
+"en": "software library",
+"ru": "библиотека функций"
+},
+{
+"qid": "Q271680",
+"enwiki": "Software framework",
+"ruwiki": "Фреймворк",
+"en": "software framework",
+"ru": "фреймворк"
+},
+{
+"qid": "Q189053",
+"enwiki": "Command-line interface",
+"ruwiki": "Интерфейс командной строки",
+"en": "command-line interface",
+"ru": "интерфейс командной строки"
+},
+{
+"qid": "Q1571814",
+"enwiki": "Configuration file",
+"ruwiki": null,
+"en": "configuration file",
+"ru": "Конфигурация программного обеспечения"
+},
+{
+"qid": "Q400857",
+"enwiki": "Environment variable",
+"ruwiki": "Переменная среды",
+"en": "environment variable",
+"ru": "Переменная среды"
+},
+{
+"qid": "Q186885",
+"enwiki": "Timestamp",
+"ruwiki": "Временная метка",
+"en": "timestamp",
+"ru": "временная метка"
+},
+{
+"qid": "Q12143",
+"enwiki": "Time zone",
+"ruwiki": "Часовой пояс",
+"en": "time zone",
+"ru": "часовой пояс"
+},
+{
+"qid": "Q218341",
+"enwiki": "Checksum",
+"ruwiki": "Контрольная сумма",
+"en": "checksum",
+"ru": "контрольная сумма"
+},
+{
+"qid": "Q8366",
+"enwiki": "Algorithm",
+"ruwiki": "Алгоритм",
+"en": "algorithm",
+"ru": "алгоритм"
+},
+{
+"qid": "Q175263",
+"enwiki": "Data structure",
+"ruwiki": "Структура данных",
+"en": "data structure",
+"ru": "структура данных"
+},
+{
+"qid": "Q186152",
+"enwiki": "Array (data structure)",
+"ruwiki": "Массив (тип данных)",
+"en": "array data structure",
+"ru": "массив"
+},
+{
+"qid": "Q80585",
+"enwiki": "Associative array",
+"ruwiki": "Ассоциативный массив",
+"en": "associative array",
+"ru": "ассоциативный массив"
+},
+{
+"qid": "Q220543",
+"enwiki": "Queue (abstract data type)",
+"ruwiki": "Очередь (программирование)",
+"en": "queue",
+"ru": "очередь"
+},
+{
+"qid": "Q264164",
+"enwiki": "Recursion (computer science)",
+"ruwiki": "Рекурсивная функция",
+"en": "recursion",
+"ru": "Рекурсивная функция"
+},
+{
+"qid": "Q190686",
+"enwiki": "Function (computer programming)",
+"ruwiki": "Подпрограмма",
+"en": "subroutine",
+"ru": "подпрограмма"
+},
+{
+"qid": "Q471748",
+"enwiki": "Exception handling",
+"ruwiki": "Обработка исключений",
+"en": "exception handling",
+"ru": "исключение в программе"
+},
+{
+"qid": "Q141090",
+"enwiki": "Encryption",
+"ruwiki": "Шифрование",
+"en": "encryption",
+"ru": "шифрование"
+},
+{
+"qid": "Q212108",
+"enwiki": "Authentication",
+"ruwiki": "Аутентификация",
+"en": "authentication",
+"ru": "аутентификация"
+},
+{
+"qid": "Q788590",
+"enwiki": "Authorization",
+"ruwiki": "Авторизация",
+"en": "authorization",
+"ru": "авторизация"
+},
+{
+"qid": "Q228502",
+"enwiki": "Access control",
+"ruwiki": "Система контроля и управления доступом",
+"en": "access control",
+"ru": "система контроля и управления доступом"
+},
+{
+"qid": "Q3702971",
+"enwiki": "Personal data",
+"ruwiki": "Персональные данные",
+"en": "personal data",
+"ru": "персональные данные"
+},
+{
+"qid": "Q189900",
+"enwiki": "Information security",
+"ruwiki": "Информационная безопасность",
+"en": "information security",
+"ru": "информационная безопасность"
+},
+{
+"qid": "Q3353185",
+"enwiki": "Business intelligence",
+"ruwiki": "Business Intelligence",
+"en": "business intelligence",
+"ru": "Business Intelligence"
+},
+{
+"qid": "Q6504956",
+"enwiki": "Data visualization",
+"ruwiki": "Визуализация данных",
+"en": "data visualization",
+"ru": "визуализация данных"
+},
+{
+"qid": "Q19033",
+"enwiki": "Arithmetic mean",
+"ruwiki": "Среднее арифметическое",
+"en": "arithmetic mean",
+"ru": "среднее арифметическое"
+},
+{
+"qid": "Q226995",
+"enwiki": "Median",
+"ruwiki": "Медиана (статистика)",
+"en": "median",
+"ru": "медиана"
+},
+{
+"qid": "Q49908",
+"enwiki": "Sampling (statistics)",
+"ruwiki": "Семплирование (математическая статистика)",
+"en": "sampling",
+"ru": "семплирование"
+},
+{
+"qid": "Q186290",
+"enwiki": "Correlation",
+"ruwiki": "Корреляция",
+"en": "correlation",
+"ru": "корреляция"
+},
+{
+"qid": "Q208042",
+"enwiki": "Regression analysis",
+"ruwiki": "Регрессионный анализ",
+"en": "regression analysis",
+"ru": "регрессионный анализ"
+},
+{
+"qid": "Q779824",
+"enwiki": "Outlier",
+"ruwiki": "Выброс (статистика)",
+"en": "outlier",
+"ru": "выброс (статистика)"
+},
+{
+"qid": "Q186588",
+"enwiki": "Time series",
+"ruwiki": "Временной ряд",
+"en": "time series",
+"ru": "временной ряд"
+},
+{
+"qid": "Q30232",
+"enwiki": "Agile software development",
+"ruwiki": "Гибкая методология разработки",
+"en": "agile software development",
+"ru": "гибкая методология разработки"
+}
+]

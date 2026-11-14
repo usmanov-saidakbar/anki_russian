@@ -1,0 +1,263 @@
+# Work words for a data engineer. This file only SELECTS entries; every Russian
+# form, stress mark and translation is copied from the sources at build time.
+#
+# [wiktionary] = Russian headwords from English Wiktionary (kaikki.org extract)
+# [wikipedia]  = English Wikipedia article titles; the Russian term is the
+#                Russian label of the same Wikidata item.
+
+[wiktionary]
+компьютер
+программист
+программное обеспечение
+файл
+папка
+сервер
+база данных
+хранилище данных
+запрос
+запрашивать
+запросить
+значение
+параметр
+аргумент
+идентификатор
+модуль
+объект
+класс
+выражение
+символ
+поток
+стек
+куча
+матрица
+вычисление
+ядро
+оболочка
+терминал
+скрипт
+репозиторий
+ветка
+коммит
+патч
+баг
+отладка
+отлаживать
+отладить
+дебаг
+компилятор
+компилировать
+документация
+загрузка
+загружать
+загрузить
+сохранять
+сохранить
+записывать
+записать
+выводить
+вывести
+ввод
+выдача
+преобразовать
+преобразовывать
+разбиение
+разметка
+кодирование
+транзакция
+кэш
+бэкап
+логин
+блокировка
+разрешение
+доступ
+сброс
+перезагрузка
+перезагружать
+перезагрузить
+зависнуть
+зависать
+краш
+лаг
+фича
+дефолт
+умолчание
+директория
+каталог
+ссылка
+привязка
+перенос
+выделение
+хост
+хостинг
+порт
+прокси
+шлюз
+трафик
+сервис
+клиентский
+пользовательский
+распределённый
+статический
+сжатый
+двоичный
+бит
+байт
+мегабайт
+гигабайт
+терабайт
+петабайт
+накопитель
+флеш-память
+конвейер
+парсить
+псевдокод
+подпрограмма
+пространство имён
+многозадачность
+тред
+топик
+агрегатор
+дисперсия
+нормальное распределение
+стандартное отклонение
+машинное обучение
+нейросеть
+большая языковая модель
+кибербезопасность
+информационные технологии
+мобильное приложение
+интерфейс
+документ
+
+[wikipedia]
+Big data
+Data analysis
+Data engineering
+Data science
+Data set
+Data lake
+Data mart
+Extract, transform, load
+Pipeline (computing)
+Stream processing
+Batch processing
+Data model
+Data quality
+Data governance
+Data integration
+Data cleansing
+Data validation
+Data migration
+Data integrity
+Referential integrity
+Metadata
+Master data
+Database schema
+Star schema
+Snowflake schema
+Fact table
+Dimension (data warehouse)
+Slowly changing dimension
+Change data capture
+Online analytical processing
+Online transaction processing
+Partition (database)
+Shard (database architecture)
+Replication (computing)
+Table (database)
+Column (database)
+Row (database)
+View (SQL)
+Join (SQL)
+Database index
+Primary key
+Foreign key
+Database normalization
+Denormalization
+Database transaction
+Stored procedure
+Database trigger
+Aggregate function
+Window function (SQL)
+Null (SQL)
+Data type
+Query optimization
+Query plan
+SQL
+NoSQL
+Hash function
+Data compression
+Serialization
+Comma-separated values
+Computer cluster
+Distributed computing
+Parallel computing
+Cloud computing
+Virtual machine
+Containerization (computing)
+Scalability
+Fault tolerance
+Load balancing (computing)
+Throughput
+Message queue
+Publish–subscribe pattern
+Event-driven architecture
+Microservices
+API
+Idempotence
+Scheduling (computing)
+Workflow
+Orchestration (computing)
+Deadlock
+Race condition
+Memory leak
+Garbage collection (computer science)
+Version control
+Continuous integration
+Software deployment
+Software testing
+Unit testing
+Regression testing
+Code review
+Code refactoring
+Technical debt
+Source code
+Programming language
+Interpreter (computing)
+Library (computing)
+Software framework
+Command-line interface
+Configuration file
+Environment variable
+Log file
+Timestamp
+Time zone
+Checksum
+Algorithm
+Data structure
+Array (data structure)
+Associative array
+Queue (abstract data type)
+Recursion (computer science)
+Variable (computer science)
+Function (computer programming)
+Exception handling
+Encryption
+Authentication
+Authorization
+Access control
+Personal data
+Information security
+Business intelligence
+Dashboard (business)
+Key performance indicator
+Data visualization
+Arithmetic mean
+Median
+Sampling (statistics)
+Correlation
+Regression analysis
+Outlier
+Time series
+Agile software development
+Scrum (software development)
