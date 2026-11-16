@@ -340,6 +340,45 @@
     }
     return { learn, rev, fresh: freshIds().length, later };
   }
+
+  // Words introduced today (first card of a word shown today, including "I know it").
+  function startedTodayIds() {
+    const t = today();
+    return Object.entries(P.cards)
+      .filter(([id, c]) => c && c.a === t && c.q !== "S" && c.q !== "N" && wordFor(id))
+      .map(([id]) => id);
+  }
+
+  // Reviews and learning checks that are due right now.
+  function dueNow() {
+    const t = now();
+    const d = today();
+    let rev = 0;
+    let learn = 0;
+    for (const [id, c] of Object.entries(P.cards)) {
+      if (!wordFor(id)) continue;
+      if (c.q === "R" && c.due <= d) rev++;
+      else if ((c.q === "L" || c.q === "F") && c.at <= t) learn++;
+    }
+    return { rev, learn };
+  }
+
+  // The words after today's set, grouped into future daily batches, in study order.
+  // Returns a Map from word id to the batch number (0 = tomorrow's words).
+  function upcomingBatchOf() {
+    const todaySet = new Set(freshIds());
+    const per = Math.max(1, P.settings.newPerDay || 0);
+    const map = new Map();
+    let idx = 0;
+    for (const id of ownIds()) {
+      if (!started(id) && !todaySet.has(id)) map.set(id, Math.floor(idx++ / per));
+    }
+    for (const w of words) {
+      if (!deckOn(w) || started(w.id) || P.pull[w.id] || todaySet.has(w.id)) continue;
+      map.set(w.id, Math.floor(idx++ / per));
+    }
+    return map;
+  }
   function status(id) {
     const c = P.cards[id];
     if (!c || c.q === "N") return "new";
@@ -630,11 +669,12 @@
           <div class="due-n c-rev"><b class="num">${num(c.rev)}</b><span>to review</span></div>
         </div>
         <button type="button" class="btn primary big" data-a="study">${studied ? "Continue" : "Start"} · about ${minutes} min</button>`
-      : `<p class="done-line">${studied ? "Done for today." : "Nothing due right now."}${c.later ? ` ${plural(c.learn, "word")} come back in ${fmtWait(c.later - now())}.` : ""}</p>
+      : `<p class="done-line">${studied ? "All done for today ✓" : "Nothing due right now."}${c.later ? ` ${plural(c.learn, "word")} come back in ${fmtWait(c.later - now())}.` : ""}</p>
         ${unstarted ? '<button type="button" class="btn big" data-a="more">Learn 10 more words</button>' : ""}`;
     return `<section class="today">
       <p class="eyebrow">${h(date)}</p>
       <div class="sheet today-sheet">${main}</div>
+      ${renderTodayWords()}
       ${testCardHTML()}
       <div class="facts">
         <div><b class="num">${num(st)}</b><span>${st === 1 ? "day" : "days"} in a row</span></div>
@@ -644,6 +684,34 @@
       ${progressBar(t)}
       <p class="hint">New words come in the order of the <a href="https://ssharoff.github.io/kelly/" target="_blank" rel="noopener">Kelly list</a> (A1 to B2)${P.settings.work ? ", with a data-engineering word every fifth card" : ""}. Add your own words under <a href="#words">Words</a>.</p>
     </section>`;
+  }
+
+  // Today's daily words: the day's new words and what's already been started.
+  function renderTodayWords() {
+    const fresh = freshIds(newLeft());
+    const startedToday = startedTodayIds();
+    const due = dueNow();
+    const ids = [...startedToday, ...fresh];
+    const shown = ids.slice(0, 12);
+    const rows = [];
+    for (const id of shown) {
+      const w = wordFor(id);
+      if (!w) continue;
+      const done = startedToday.includes(id);
+      rows.push(`<li><span class="dw-ru" lang="ru">${h(w.ru)}</span><span class="dw-en">${h(w.en)}</span><span class="chip ${done ? "chip-rev" : "chip-new"}">${done ? "started" : "new"}</span></li>`);
+    }
+    const extra = ids.length - shown.length;
+    const allDone = fresh.length === 0 && due.rev === 0 && due.learn === 0;
+    const head =
+      allDone && (startedToday.length || P.log[dayKey(today())])
+        ? "All done for today ✓"
+        : fresh.length
+          ? `${plural(fresh.length, "new word")} to learn${due.rev ? ` · ${plural(due.rev, "review")} due` : ""}`
+          : `${plural(due.rev, "review")} due${due.learn ? ` · ${plural(due.learn, "check")} due` : ""}`;
+    return `<div class="sheet daily-words">
+      <div class="daily-head"><h3>Today's words</h3><span class="muted">${h(head)}</span></div>
+      ${rows.length ? `<ol class="daily-list">${rows.join("")}</ol>${extra > 0 ? `<p class="hint">…and ${plural(extra, "more word")}.</p>` : ""}` : `<p class="hint">${fresh.length || startedToday.length || due.rev || due.learn ? "The list refreshes as you study." : "Nothing due right now."}</p>`}
+    </div>`;
   }
 
   function renderStudy() {
@@ -713,7 +781,7 @@
     const mins = Math.max(1, Math.round(S.ms / MIN));
     const later = c.later ? `<p>${plural(c.learn, "word")} come back in ${fmtWait(c.later - now())} for one more check.</p>` : "";
     return `<article class="card sheet done">
-      <h2>Done for today</h2>
+      <h2>All done for today</h2>
       <p>${S.answered || S.started ? `You answered ${plural(S.answered, "card")} and started ${plural(S.started, "new word")} in about ${plural(mins, "minute")}.` : "There's nothing to study right now."}</p>
       ${later}
       <p>Tomorrow: ${plural(tomorrow, "review")}${P.settings.newPerDay ? ` and up to ${num(P.settings.newPerDay)} new words` : ""}.</p>
@@ -725,7 +793,7 @@
   }
 
   // Words list
-  const W_STATE = { q: "", filter: "all", level: "all", limit: 50, open: null, editing: null, addNote: "" };
+  const W_STATE = { q: "", filter: "all", level: "all", days: 15, open: null, editing: null, addNote: "" };
   function filteredWords() {
     const q = keyOf(W_STATE.q);
     const all = [...ownIds().map((id) => wordFor(id)), ...words.map((w) => wordFor(w.id))].filter(Boolean);
@@ -774,10 +842,75 @@
   }
   function renderWordList() {
     const list = filteredWords();
-    const shown = list.slice(0, W_STATE.limit);
-    return `<p class="list-count">${plural(list.length, "word")}</p>
-      <ul class="wlist">${shown.map(wordRow).join("")}</ul>
-      ${list.length > shown.length ? `<button type="button" class="btn wide" data-a="more-rows">Show ${num(Math.min(50, list.length - shown.length))} more</button>` : ""}`;
+    const groups = groupedWords(list);
+    const searching = Boolean(W_STATE.q.trim());
+    const shownGroups = searching ? groups : groups.slice(0, W_STATE.days);
+    const html = shownGroups
+      .map((g) => {
+        const open = searching || g.key === "today";
+        const date = g.day >= 0 && g.key.startsWith("up") ? `<span class="dg-date">${h(fmtDay(g.day, { weekday: "short", day: "numeric", month: "short" }))}</span>` : "";
+        return `<details class="day-group"${open ? " open" : ""}>
+          <summary><span class="dg-label">${h(g.label)}</span><span class="dg-count">${plural(g.words.length, "word")}</span>${date}</summary>
+          <ul class="wlist">${g.words.map(wordRow).join("")}</ul>
+        </details>`;
+      })
+      .join("");
+    const more =
+      !searching && groups.length > shownGroups.length
+        ? `<button type="button" class="btn wide" data-a="more-days">Show ${num(Math.min(15, groups.length - shownGroups.length))} more days</button>`
+        : "";
+    return `<p class="list-count">${plural(list.length, "word")} · grouped by study day</p>
+      ${html}${more}`;
+  }
+
+  // The filtered words, split into day groups: Today, upcoming daily batches,
+  // then the days words were learned on (most recent first), then hidden.
+  function groupedWords(list) {
+    const t = today();
+    const todaySet = new Set(freshIds());
+    const batchOf = upcomingBatchOf();
+    const groups = new Map();
+    const add = (key, label, day, w) => {
+      if (!groups.has(key)) groups.set(key, { key, label, day, words: [] });
+      groups.get(key).words.push(w);
+    };
+    for (const w of list) {
+      const c = P.cards[w.id];
+      if (c && c.q === "S") {
+        add("hidden", "Hidden", -1, w);
+        continue;
+      }
+      if (c && c.q !== "N" && c.a != null) {
+        const d = c.a;
+        add("d" + d, d === t ? "Today" : fmtDay(d, { weekday: "short", day: "numeric", month: "short" }), d, w);
+        continue;
+      }
+      if (P.pull[w.id] || todaySet.has(w.id)) {
+        add("today", "Today", t, w);
+        continue;
+      }
+      if (!P.settings.newPerDay) {
+        add("off", "Skipped · new words are off", -1, w);
+        continue;
+      }
+      if (!deckOn(w)) {
+        add("off", "Skipped · data-engineering words are off", -1, w);
+        continue;
+      }
+      const b = batchOf.get(w.id);
+      if (b === undefined) {
+        add("off", "Not scheduled", -1, w);
+        continue;
+      }
+      const day = t + b + 1;
+      add("up" + b, b === 0 ? "Tomorrow" : `In ${b + 1} days`, day, w);
+    }
+    const ordered = [];
+    if (groups.has("today")) ordered.push(groups.get("today"));
+    for (const [, g] of [...groups].sort((a, b) => a[1].day - b[1].day)) if (g.key.startsWith("up")) ordered.push(g);
+    for (const [, g] of [...groups].sort((a, b) => b[1].day - a[1].day)) if (g.key.startsWith("d")) ordered.push(g);
+    for (const key of ["off", "hidden"]) if (groups.has(key)) ordered.push(groups.get(key));
+    return ordered;
   }
   function renderWords() {
     const opt = (v, label, cur) => `<option value="${v}"${cur === v ? " selected" : ""}>${label}</option>`;
@@ -1353,8 +1486,8 @@
       W_STATE.editing = null;
       paintList();
     },
-    "more-rows": () => {
-      W_STATE.limit += 50;
+    "more-days": () => {
+      W_STATE.days += 15;
       paintList();
     },
     pull: (b) => {
@@ -1448,14 +1581,14 @@
   app.addEventListener("input", (e) => {
     if (e.target.id === "word-search") {
       W_STATE.q = e.target.value;
-      W_STATE.limit = 50;
+      W_STATE.days = 15;
       paintList();
     }
   });
   app.addEventListener("change", (e) => {
     if (e.target.id === "word-filter" || e.target.id === "word-level") {
       W_STATE[e.target.id === "word-filter" ? "filter" : "level"] = e.target.value;
-      W_STATE.limit = 50;
+      W_STATE.days = 15;
       paintList();
     }
     if (e.target.id === "import-file" && e.target.files[0]) {

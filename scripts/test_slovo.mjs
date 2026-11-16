@@ -65,7 +65,7 @@ export default async function test(page) {
   }
   assert.equal(await S("s.id"), null);
   t = await text();
-  assert.match(t, /Done for today/);
+  assert.match(t, /All done for today/);
   const cards = await page.eval(`slovo.progress.cards`);
   assert.ok(Object.values(cards).every((c) => c.q === "R"), JSON.stringify(cards));
   assert.equal(cards["сейчас"].i, 1, "Again then Good, Good: back tomorrow");
@@ -78,7 +78,7 @@ export default async function test(page) {
 
   await click("[data-a=home]");
   t = await text();
-  assert.match(t, /Done for today/);
+  assert.match(t, /All done for today/);
   assert.match(t, /10\s*words learned/);
   assert.match(t, /1\s*day in a row/);
 
@@ -146,6 +146,8 @@ export default async function test(page) {
   assert.equal(await S("s.id"), null);
   await click("[data-a=home]");
   assert.match(await text(), /2\s*days in a row/);
+  assert.match(await text(), /Today's words/);
+  assert.match(await page.eval(`document.querySelector('.daily-words .daily-head .muted').textContent`), /All done for today/);
 
   // Five days later the rest are due.
   for (let i = 0; i < 5; i++) await click("[data-a=tomorrow]");

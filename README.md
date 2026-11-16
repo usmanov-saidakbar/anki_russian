@@ -9,6 +9,8 @@ A flashcard app for learning Russian vocabulary up to B2, with spaced repetition
 - **Your own words**: type `'` after the stressed vowel (`доро'жка` becomes `доро́жка`).
 - **Spaced repetition with FSRS-5**, the algorithm Anki uses, with its default weights.
 - **Word tests** on words you've already learned. A wrong answer sends the word back to your study cards.
+- **Today's words**: the home screen lists the day's new words and marks the ones you've already started, so each day has a clear goal. When the queue is empty, the day ends with "All done for today".
+- **Words grouped by study day**: the Words view groups the dictionary into Today, Tomorrow, "In N days" (the upcoming daily batches) and the days you learned words on, instead of one endless list. Search and filters still work across all days.
 - **Sync between devices** by email, through the python_deepdive server.
 
 ## How a day works
