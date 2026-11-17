@@ -9,7 +9,8 @@ A flashcard app for learning Russian vocabulary up to B2, with spaced repetition
 - **Your own words**: type `'` after the stressed vowel (`доро'жка` becomes `доро́жка`).
 - **Spaced repetition with FSRS-5**, the algorithm Anki uses, with its default weights.
 - **Word tests** on words you've already learned. A wrong answer sends the word back to your study cards.
-- **Today's words**: the home screen lists the day's new words and marks the ones you've already started, so each day has a clear goal. When the queue is empty, the day ends with "All done for today".
+- **Today's words**: each day has a fixed set of new words (20 by default). The home screen lists them and marks the ones you've already started. "I know it" counts toward the set, so there are no extra words once it's done; the day ends with "All done for today".
+- **Unlimited practice**: after (or before) the day's set, practise as long as you like with questions on the words you've started, today's words first. Practice never adds new words and doesn't change the review schedule; a missed word comes back a few questions later.
 - **Words grouped by study day**: the Words view groups the dictionary into Today, Tomorrow, "In N days" (the upcoming daily batches) and the days you learned words on, instead of one endless list. Search and filters still work across all days.
 - **Sync between devices** by email, through the python_deepdive server.
 
@@ -29,10 +30,11 @@ A flashcard app for learning Russian vocabulary up to B2, with spaced repetition
    - type the word.
 
    You choose how often tests run under **Options**.
+5. **Practice.** Press **Practise** for unlimited questions of the same kinds on your words, until you press **Stop**.
 
 **Keys:** Space shows the answer, 1–4 rate it, K means "I know it", Z undoes the last answer, and R reads the word aloud.
 
-**Options:** set new words per day (default 20), Russian-first or English-first cards, reading words aloud, IT words on or off, how often tests run, sync, and backups.
+**Options:** set the size of the daily set of new words (default 20), Russian-first or English-first cards, reading words aloud, IT words on or off, how often tests run, sync, and backups.
 
 ## Deploying on Render
 

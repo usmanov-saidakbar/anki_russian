@@ -237,5 +237,71 @@ export default async function test(page) {
   const merged = await page.eval(`Object.keys(slovo.progress.cards).sort()`);
   assert.deepEqual(merged, ["в", "и"]);
   await page.shot(`${out}/a1-app-today.png`, ".shell");
+
+  // ---------- A fixed daily set of new words, then unlimited practice ----------
+  await page.eval(`location.hash = 'options'`);
+  await page.sleep(200);
+  await click('[data-k="newPerDay"][data-v="5"]');
+  await page.eval(`location.hash = 'today'`);
+  await page.sleep(200);
+  const todayKey = () => page.eval(`new Date(slovo.dayOf(Date.now()) * 864e5).toISOString().slice(0, 10)`);
+  const before = await page.eval(`slovo.progress.log[${JSON.stringify(await todayKey())}]`);
+  assert.equal(before.n, 1, "«и» was started earlier today");
+  assert.equal(await page.eval(`document.querySelectorAll('.due-n b')[0].textContent`), "4", "5 a day, 1 already started");
+  await click("[data-a=study]");
+  let intros = 0;
+  for (let i = 0; i < 80 && (await S("Boolean(s.id)")); i++) {
+    if ((await S("s.kind")) === "intro") {
+      await key(intros < 2 ? "k" : " "); // the first two: «I know it»
+      intros++;
+    } else {
+      if (!(await S("s.revealed"))) await key(" ");
+      await key("3");
+    }
+  }
+  assert.equal(intros, 4, "only today's set of new words, «I know it» included");
+  const after = await page.eval(`slovo.progress.log[${JSON.stringify(await todayKey())}]`);
+  assert.equal((after.n || 0) + (after.k || 0), 5);
+  t = await text();
+  assert.doesNotMatch(t, /Learn 10 more/);
+  assert.match(t, /All done for today/);
+  assert.equal(await page.eval(`Boolean(document.querySelector('[data-a=practice]'))`), true, "practice offered at the end");
+  await click("[data-a=home]");
+  assert.equal(await page.eval(`document.querySelectorAll('.due-n b').length`), 0, "no more new words today");
+  assert.match(await text(), /Practise as much as you like/);
+
+  const cardsBefore = await page.eval(`JSON.stringify(slovo.progress.cards)`);
+  await click("[data-a=practice]");
+  assert.equal(await page.eval(`location.hash`), "#practice");
+  const answerQ = async (right) => {
+    const q = await Qx("q.qs[q.i]");
+    if (q.type === "type") {
+      const ans = right ? (await page.eval(`slovo.words().find(w => w.id === ${JSON.stringify(q.id)}).ru`)).replace(/́/g, "") : "абвгд";
+      await page.eval(`(() => { const f = document.querySelector('[data-form=q-type]'); f.answer.value = ${JSON.stringify(ans)}; f.requestSubmit(); })()`);
+    } else {
+      await key(String((right ? q.answer : (q.answer + 1) % 4) + 1));
+    }
+    return q.id;
+  };
+  const seen = [];
+  for (let i = 0; i < 12; i++) {
+    seen.push(await answerQ(i !== 0));
+    assert.equal(await Qx("q.ok"), i !== 0, `practice question ${i}`);
+    if (i === 0) assert.match(await text(), /comes back in a few questions/);
+    await key("Enter");
+  }
+  assert.ok(seen.slice(1, 6).includes(seen[0]), "a missed word comes back soon: " + seen.join(", "));
+  assert.equal(await page.eval(`JSON.stringify(slovo.progress.cards)`), cardsBefore, "practice doesn't change the schedule");
+  const plog = await page.eval(`slovo.progress.log[${JSON.stringify(await todayKey())}]`);
+  assert.equal(plog.pq, 12);
+  assert.equal(plog.pc, 11);
+  await click("[data-a=q-stop]");
+  assert.match(await text(), /Practice: 11 \/ 12/);
+  await page.shot(`${out}/a2-practice-done.png`, ".shell");
+  await click('.actions [data-a=practice]');
+  assert.equal(await Qx("q.count"), 0, "keep practising starts a new round");
+  await click("[data-a=q-stop]");
+  assert.equal(await page.eval(`location.hash`), "#today");
+  assert.match(await text(), /Today: 12 answers, 11 right/);
   console.log("all slovo checks passed");
 }

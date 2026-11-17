@@ -305,9 +305,11 @@
       .filter(([, o]) => !o.gone)
       .sort((a, b) => a[1].t - b[1].t)
       .map(([id]) => id);
+  // Each day has a fixed set of new words: «Got it» and «I know it» both count toward it.
+  // After the set is done there are no more new words that day; practice is unlimited instead.
   function newLeft() {
     const log = todayLog();
-    return Math.max(0, P.settings.newPerDay + (log.x || 0) * 10 - (log.n || 0));
+    return Math.max(0, P.settings.newPerDay - (log.n || 0) - (log.k || 0));
   }
   // New words in the order they'll be shown: your own words first, then the list.
   function freshIds(max = Infinity) {
@@ -460,7 +462,7 @@
     if (known) {
       const ivl = 10 + Math.floor(Math.random() * 16);
       P.cards[id] = { q: "R", s: initS(4), d: initD(4), i: ivl, l: day, due: day + ivl, n: 1, f: 0, k: 1, a: day, t };
-      bump(log, "k");
+      bump(log, counted ? "k" : "ko");
     } else {
       P.cards[id] = { q: "L", st: 0, at: t + AGAIN_MIN * MIN, n: 0, f: 0, a: day, t };
       bump(log, counted ? "n" : "o");
@@ -579,7 +581,7 @@
   function streak() {
     const active = (day) => {
       const l = P.log[dayKey(day)];
-      return l && (l.r || 0) + (l.n || 0) + (l.o || 0) + (l.k || 0) > 0;
+      return l && (l.r || 0) + (l.n || 0) + (l.o || 0) + (l.k || 0) + (l.pq || 0) > 0;
     };
     let d = today();
     if (!active(d)) d--;
@@ -659,7 +661,7 @@
     const log = P.log[dayKey(today())] || {};
     const due = c.fresh + c.learn + c.rev;
     const minutes = Math.max(1, Math.round((c.fresh * 35 + c.learn * 9 + c.rev * 9) / 60));
-    const unstarted = words.some((w) => deckOn(w) && !started(w.id));
+    const canPractise = practicePool().length >= PRACTICE_MIN;
     const studied = (log.r || 0) + (log.n || 0) + (log.o || 0) + (log.k || 0) > 0;
     const date = fmtDay(today(), { weekday: "long", day: "numeric", month: "long" });
     const main = due
@@ -670,12 +672,13 @@
         </div>
         <button type="button" class="btn primary big" data-a="study">${studied ? "Continue" : "Start"} · about ${minutes} min</button>`
       : `<p class="done-line">${studied ? "All done for today ✓" : "Nothing due right now."}${c.later ? ` ${plural(c.learn, "word")} come back in ${fmtWait(c.later - now())}.` : ""}</p>
-        ${unstarted ? '<button type="button" class="btn big" data-a="more">Learn 10 more words</button>' : ""}`;
+        ${canPractise ? '<button type="button" class="btn big" data-a="practice">Practise as much as you like</button>' : ""}`;
     return `<section class="today">
       <p class="eyebrow">${h(date)}</p>
       <div class="sheet today-sheet">${main}</div>
       ${renderTodayWords()}
       ${testCardHTML()}
+      ${practiceCardHTML()}
       <div class="facts">
         <div><b class="num">${num(st)}</b><span>${st === 1 ? "day" : "days"} in a row</span></div>
         <div><b class="num">${num(t.learned)}</b><span>words learned</span></div>
@@ -777,7 +780,7 @@
   }
   function renderDone(c) {
     const tomorrow = Object.entries(P.cards).filter(([id, k]) => k.q === "R" && k.due === today() + 1 && wordFor(id)).length;
-    const unstarted = words.some((w) => deckOn(w) && !started(w.id));
+    const canPractise = practicePool().length >= PRACTICE_MIN;
     const mins = Math.max(1, Math.round(S.ms / MIN));
     const later = c.later ? `<p>${plural(c.learn, "word")} come back in ${fmtWait(c.later - now())} for one more check.</p>` : "";
     return `<article class="card sheet done">
@@ -788,7 +791,7 @@
     </article>
     <div class="actions two">
       <button type="button" class="btn" data-a="home">Back to today</button>
-      ${unstarted ? '<button type="button" class="btn primary" data-a="more">Learn 10 more</button>' : ""}
+      ${canPractise ? '<button type="button" class="btn primary" data-a="practice">Practise</button>' : ""}
     </div>`;
   }
 
@@ -1025,7 +1028,7 @@
          <p class="hint">There's no password: anyone who knows the email can see these words. Use the same email as the Russian roadmap.</p>`;
     return `<section class="options">
       <div class="opt"><h3>New words a day</h3><div class="segs">${[5, 10, 15, 20, 30].map((n) => seg("newPerDay", n, String(n))).join("")}</div>
-        <p class="hint">Each new word takes about half a minute on its first day, and comes back for short reviews after that.</p></div>
+        <p class="hint">Your daily set of new words. Words you mark «I know it» count too. When the set is done, practise as much as you like: practice never adds new words.</p></div>
       <div class="opt"><h3>Show first</h3><div class="segs">${seg("dir", "ru", "Russian")}${seg("dir", "en", "English")}${seg("dir", "mix", "Mixed")}</div></div>
       <div class="opt"><h3>Read words aloud</h3><div class="segs">${seg("audio", true, "On")}${seg("audio", false, "Off")}</div><p class="hint">${voiceNote}${voice ? ' <button type="button" class="link-btn" data-a="speak" data-text="Приве́т! Как дела́?">Try it</button>' : ""}</p></div>
       <div class="opt"><h3>Data-engineering words</h3><div class="segs">${seg("work", true, "Include")}${seg("work", false, "Skip")}</div><p class="hint">${num(levelTotals.IT || 0)} terms from Wiktionary and Wikipedia, one in every five new words.</p></div>
@@ -1152,6 +1155,23 @@
   function quizRecord(ok) {
     const q = Q.qs[Q.i];
     const log = todayLog();
+    if (Q.mode === "practice") {
+      // Practice never changes the schedule; a missed word just comes back a few questions later.
+      bump(log, "pq");
+      if (ok) bump(log, "pc");
+      Q.count++;
+      if (ok) Q.correct++;
+      else {
+        if (!Q.wrong.includes(q.id)) Q.wrong.push(q.id);
+        Q.queue.splice(Math.min(3, Q.queue.length), 0, q.id);
+      }
+      Q.answered = true;
+      Q.ok = ok;
+      save();
+      render();
+      if (P.settings.audio) speak(wordFor(q.id).ru);
+      return;
+    }
     bump(log, "tq");
     if (ok) bump(log, "tc");
     const c = P.cards[q.id];
@@ -1191,6 +1211,7 @@
   }
   function quizNext() {
     if (!Q.answered) return;
+    if (Q.mode === "practice") return practiceNext();
     Q.i++;
     Object.assign(Q, { answered: false, ok: false, near: false, picked: null, typed: "" });
     if (Q.i >= Q.qs.length) {
@@ -1202,14 +1223,21 @@
     quizAutoplay();
   }
   function renderQuiz() {
-    if (Q.done) return renderQuizDone();
+    if (Q.done) return Q.mode === "practice" ? renderPracticeDone() : renderQuizDone();
     const q = Q.qs[Q.i];
     const w = wordFor(q.id);
-    const bar = `<header class="study-bar">
+    const practice = Q.mode === "practice";
+    const bar = practice
+      ? `<header class="study-bar">
+      <button type="button" class="icon-btn" data-a="q-stop" aria-label="Stop practising">✕ <span>Stop</span></button>
+      <div class="counts"><span class="chip chip-new">Practice</span><span class="num">${plural(Q.count, "answer")}</span><span class="c-rev num" title="Right">✓ ${Q.correct}</span></div>
+    </header>`
+      : `<header class="study-bar">
       <button type="button" class="icon-btn" data-a="q-stop" aria-label="Stop the test">✕ <span>Stop</span></button>
       <div class="counts"><span class="num">${Q.i + 1} / ${Q.qs.length}</span><span class="c-rev num" title="Right so far">✓ ${Q.correct}</span></div>
     </header>
     <div class="quiz-progress" aria-hidden="true"><span style="width:${((Q.i / Q.qs.length) * 100).toFixed(1)}%"></span></div>`;
+    const missMsg = practice ? "Not this time. It comes back in a few questions." : "Not this time. The word goes back into your study cards.";
     const ask = { meaning: "What does it mean?", russian: "Which Russian word is it?", gap: "Fill the gap", listen: "Listen: what does it mean?", type: "Type it in Russian" }[q.type];
     let prompt = "";
     if (q.type === "meaning") prompt = `<div class="word-row"><h2 class="word" lang="ru">${h(w.ru)}</h2>${speakBtn(w.ru, "Say the word")}</div>`;
@@ -1225,7 +1253,7 @@
         : "";
     const verdict = !Q.answered
       ? ""
-      : `<div class="verdict ${Q.ok ? "ok" : "bad"}" role="status">${Q.ok ? (Q.near ? "Right, but check the spelling." : "Right.") : "Not this time. The word goes back into your study cards."}</div>
+      : `<div class="verdict ${Q.ok ? "ok" : "bad"}" role="status">${Q.ok ? (Q.near ? "Right, but check the spelling." : "Right.") : missMsg}</div>
         <div class="answer-word"><span class="aw-ru" lang="ru">${h(w.ru)}</span>${speakBtn(w.ru, "Say the word")}<span class="aw-en">${h(w.en)}</span></div>`;
     const ruOptions = q.type === "russian" || q.type === "gap";
     const options = q.options
@@ -1237,7 +1265,7 @@
           .join("")}</div>`
       : "";
     const next = Q.answered
-      ? `<div class="actions"><button type="button" class="btn primary wide" data-a="q-next">${Q.i + 1 < Q.qs.length ? "Next" : "See your score"} <kbd>Enter</kbd></button></div>`
+      ? `<div class="actions"><button type="button" class="btn primary wide" data-a="q-next">${practice || Q.i + 1 < Q.qs.length ? "Next" : "See your score"} <kbd>Enter</kbd></button></div>`
       : "";
     return `${bar}<article class="card sheet quiz-card" aria-live="polite"><div class="card-tags"><span class="chip chip-new">${ask}</span>${levelChip(w)}</div>${prompt}${typing}${verdict}</article>${options}${next}`;
   }
@@ -1255,6 +1283,67 @@
       ${missed.length ? '<button type="button" class="btn primary" data-a="q-study">Study them now</button>' : '<button type="button" class="btn primary" data-a="quiz">Another test</button>'}
     </div>`;
   }
+  // ---------- Practice: unlimited questions on the words you've started ----------
+  const PRACTICE_MIN = 4;
+  const practicePool = () =>
+    Object.entries(P.cards)
+      .filter(([id, c]) => ["L", "F", "R"].includes(c.q) && wordFor(id))
+      .map(([id, c]) => ({ id, c }));
+  // Today's words first, then words you found hard (still learning, forgotten before, or not yet stable), then the rest.
+  function practiceOrder() {
+    const d = today();
+    const rank = (p) => (p.c.a === d ? 0 : p.c.q !== "R" || (p.c.f || 0) > 0 || (p.c.s || 0) < 7 ? 1 : 2);
+    return shuffle(practicePool())
+      .sort((a, b) => rank(a) - rank(b))
+      .map((p) => p.id);
+  }
+  function startPractice() {
+    if (practicePool().length < PRACTICE_MIN) {
+      toast("Learn a few words first: practice uses the words you've started.");
+      return go("today");
+    }
+    Q = { mode: "practice", qs: [], queue: practiceOrder(), types: shuffle(["meaning", "russian", "gap", "listen", "type"]), k: 0, i: -1,
+          count: 0, correct: 0, wrong: [], last: null, answered: false, ok: false, near: false, picked: null, typed: "", done: false };
+    S = null;
+    view = "practice";
+    if (location.hash !== "#practice") history.replaceState(null, "", "#practice");
+    practiceNext();
+  }
+  function practiceNext() {
+    if (!Q.queue.length) {
+      Q.queue = practiceOrder(); // start another round
+      if (Q.queue.length > 1 && Q.queue[0] === Q.last) Q.queue.push(Q.queue.shift());
+    }
+    const id = Q.queue.shift();
+    const w = wordFor(id);
+    let q = null;
+    for (let tries = 0; tries < Q.types.length && !q; tries++) q = makeQuestion(w, Q.types[Q.k++ % Q.types.length]);
+    Q.qs = [q || makeQuestion(w, "meaning") || { id, type: "type" }];
+    Object.assign(Q, { i: 0, last: id, answered: false, ok: false, near: false, picked: null, typed: "" });
+    render();
+    quizAutoplay();
+  }
+  function renderPracticeDone() {
+    const pct = Q.count ? Math.round((Q.correct / Q.count) * 100) : 0;
+    const missed = Q.wrong.map((id) => wordFor(id)).filter(Boolean);
+    return `<article class="card sheet done">
+      <h2>Practice: ${Q.correct} / ${Q.count}</h2>
+      <p>${pct}% right. Your review schedule hasn't changed.</p>
+      ${missed.length ? `<p>Worth another look:</p><ul class="missed">${missed.map((w) => `<li><span lang="ru">${h(w.ru)}</span><span>${h(w.en)}</span></li>`).join("")}</ul>` : "<p>No mistakes.</p>"}
+    </article>
+    <div class="actions two">
+      <button type="button" class="btn" data-a="home">Back to today</button>
+      <button type="button" class="btn primary" data-a="practice">Keep practising</button>
+    </div>`;
+  }
+  function practiceCardHTML() {
+    const n = practicePool().length;
+    if (n < PRACTICE_MIN) return "";
+    const log = P.log[dayKey(today())] || {};
+    const done = log.pq ? ` Today: ${plural(log.pq, "answer")}, ${num(log.pc || 0)} right.` : "";
+    return `<div class="sheet test-sheet"><div><h3>Practice</h3><p class="hint">As many questions as you like on the ${plural(n, "word")} you've started, today's words first. It never adds new words and doesn't change your reviews.${done}</p></div><button type="button" class="btn" data-a="practice">Practise</button></div>`;
+  }
+
   function testCardHTML() {
     const s = P.settings.testDays;
     const log = P.log[dayKey(today())] || {};
@@ -1287,7 +1376,7 @@
       app.innerHTML = `<div class="shell study">${renderStudy()}</div>`;
       return;
     }
-    if (view === "test") {
+    if (view === "test" || view === "practice") {
       app.innerHTML = `<div class="shell study">${previewBar()}${renderQuiz()}</div>`;
       const input = document.getElementById("q-input");
       if (input && !input.disabled) input.focus();
@@ -1357,6 +1446,7 @@
   function go(v) {
     if (v === "study") return startStudy();
     if (v === "test") return startQuiz();
+    if (v === "practice") return startPractice();
     view = VIEWS.includes(v) ? v : "today";
     if (location.hash.slice(1) !== view) history.replaceState(null, "", "#" + view);
     render();
@@ -1373,9 +1463,15 @@
       if (q) speak(wordFor(q.id).ru);
     },
     "q-stop": () => {
+      if (Q && Q.mode === "practice" && !Q.done && Q.count) {
+        Q.done = true; // show what you practised before leaving
+        render();
+        return;
+      }
       Q = null;
       go("today");
     },
+    practice: () => startPractice(),
     "q-study": () => {
       Q = null;
       startStudy();
@@ -1391,6 +1487,7 @@
     },
     home: () => {
       S = null;
+      Q = null;
       go("today");
     },
     undo: () => undo(),
@@ -1499,8 +1596,8 @@
     "mark-known": (b) => {
       const day = today();
       const ivl = 10 + Math.floor(Math.random() * 16);
-      P.cards[b.dataset.id] = { q: "R", s: initS(4), d: initD(4), i: ivl, l: day, due: day + ivl, n: 1, f: 0, k: 1, a: day, t: now() };
-      bump(todayLog(), "k");
+      P.cards[b.dataset.id] = { q: "R", s: initS(4), d: initD(4), i: ivl, l: day, due: day + ivl, n: 1, f: 0, k: 1, t: now() };
+      bump(todayLog(), "kl");
       save();
       paintList();
     },
@@ -1609,7 +1706,7 @@
   }, true);
 
   document.addEventListener("keydown", (e) => {
-    if (view === "test" && Q && !Q.done && !e.altKey && !e.metaKey && !e.ctrlKey) {
+    if ((view === "test" || view === "practice") && Q && !Q.done && !e.altKey && !e.metaKey && !e.ctrlKey) {
       if (e.target.closest && e.target.closest("input, textarea, select")) return;
       const q = Q.qs[Q.i];
       if (!Q.answered && q.options && ["1", "2", "3", "4"].includes(e.key)) quizPick(Number(e.key) - 1);
@@ -1652,6 +1749,10 @@
     }
     if (v === "test") {
       if (!Q) startQuiz();
+      return;
+    }
+    if (v === "practice") {
+      if (!Q || Q.mode !== "practice") startPractice();
       return;
     }
     if (v !== view) {
