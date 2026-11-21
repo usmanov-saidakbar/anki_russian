@@ -1,4 +1,5 @@
-# Builds words.json for the word app from published sources only:
+# Builds base_words.json (Kelly + IT words) from published sources only; build_book_words.py then
+# puts the vocabulary book first and writes public/words.json. Sources:
 #   word list + CEFR level : Kelly project Russian list (ru_m3.xls, Sharoff), A1–B2
 #   translation, stress,
 #   gender, aspect pairs   : English Wiktionary (kaikki.org extract); OpenRussian as fallback
@@ -534,7 +535,7 @@ for item in out:
             item[f] = fix_stress(item[f])
     item.pop("_k", None)
     item.pop("_rank", None)
-OUT = os.path.join(S, "..", "public", "words.json")
+OUT = os.path.join(S, "base_words.json")  # build_book_words.py then puts the book first and writes public/words.json
 json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 for k, v in sorted(stats.items()):
     print(f"{k}: {v}")

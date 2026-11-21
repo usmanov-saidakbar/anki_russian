@@ -320,6 +320,11 @@ label {
   color: var(--hard);
   border-color: currentColor;
 }
+.chip-book {
+  color: var(--good);
+  border-color: currentColor;
+  text-transform: none;
+}
 
 /* Preview strip */
 .preview-bar {
@@ -520,6 +525,10 @@ label {
   margin: 2px 0 0;
   font-size: 0.88rem;
   color: var(--muted);
+}
+.book-note {
+  font-family: var(--font-word);
+  font-size: 0.95rem;
 }
 .grammar [lang="ru"] {
   font-family: var(--font-word);

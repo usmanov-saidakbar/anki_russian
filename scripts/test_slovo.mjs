@@ -21,14 +21,16 @@ export default async function test(page) {
 
   await click("[data-a=study]");
   assert.equal(await S("s.kind"), "intro");
-  assert.equal(await page.eval(`document.querySelector('.word').textContent`), "сейча́с");
-  assert.match(await page.eval(`document.querySelector('.example').innerText`), /сейча́с/);
-  assert.match(await page.eval(`document.querySelector('.sources').innerText`), /Kelly list A1 · Wiktionary · example: Tatoeba/);
+  assert.equal(await page.eval(`document.querySelector('.word').textContent`), "го́род");
+  assert.match(await page.eval(`document.querySelector('.example').innerText`), /го́род/);
+  assert.equal(await page.eval(`document.querySelector('.book-note').textContent`), "(pl. города́)");
+  assert.match(await page.eval(`document.querySelector('.sources').innerText`), /Wade, «Using Russian Vocabulary», Unit 1, level 1, p\. 3 · example: Tatoeba/);
+  assert.equal(await page.eval(`document.querySelector('.chip-book').textContent`), "U1 · L1");
   await page.shot(`${out}/p2-intro.png`, ".shell");
 
   await key(" "); // Got it
-  assert.equal(await S("s.id"), "понимать");
-  assert.match(await page.eval(`document.querySelector('.grammar').innerText`), /imperfective verb · perfective: поня́ть/);
+  assert.equal(await S("s.id"), "покупать/купить");
+  assert.match(await page.eval(`document.querySelector('.book-note').innerText`), /\(куплю́ ку́пишь\)/);
   await key(" ");
   assert.equal(await S("s.id"), "данные");
   await key("k"); // I know it
@@ -44,13 +46,13 @@ export default async function test(page) {
   for (let i = 0; i < 20 && (await S("s.kind")) === "intro"; i++) await key(" ");
   assert.equal(await page.eval(`Object.values(slovo.progress.cards).filter(c => c.q === 'L').length`), 10);
   assert.equal(await S("s.kind"), "test", "after the new words, the first check comes early (learn-ahead)");
-  assert.equal(await S("s.id"), "сейчас");
+  assert.equal(await S("s.id"), "город");
 
   await key(" "); // show answer
   assert.deepEqual(await page.eval(`[...document.querySelectorAll('.grade small')].map(s => s.textContent)`), ["1 min", "6 min", "10 min", "16 days"]);
   await page.shot(`${out}/p3-test.png`, ".shell");
   await key("1"); // Again
-  const again = await page.eval(`slovo.progress.cards['сейчас']`);
+  const again = await page.eval(`slovo.progress.cards['город']`);
   assert.equal(again.q, "L");
   assert.equal(again.st, 0);
   assert.equal(again.s, 0.40255);
@@ -68,8 +70,8 @@ export default async function test(page) {
   assert.match(t, /All done for today/);
   const cards = await page.eval(`slovo.progress.cards`);
   assert.ok(Object.values(cards).every((c) => c.q === "R"), JSON.stringify(cards));
-  assert.equal(cards["сейчас"].i, 1, "Again then Good, Good: back tomorrow");
-  for (const [id, c] of Object.entries(cards)) if (id !== "сейчас") assert.ok(c.i >= 3 && c.i <= 5, `${id} ${c.i}`);
+  assert.equal(cards["город"].i, 1, "Again then Good, Good: back tomorrow");
+  for (const [id, c] of Object.entries(cards)) if (id !== "город") assert.ok(c.i >= 3 && c.i <= 5, `${id} ${c.i}`);
   const log = await page.eval(`slovo.progress.log[new Date(slovo.dayOf(Date.now()) * 864e5).toISOString().slice(0, 10)]`);
   assert.equal(log.n, 10);
   assert.equal(log.r, 21); // 10 words × 2 checks + 1 extra after "Again"
@@ -169,7 +171,7 @@ export default async function test(page) {
   const own = await page.eval(`Object.values(slovo.progress.own)[0]`);
   assert.equal(own.ru, "доро́жка");
   assert.equal(own.ex, "Мы шли по *доро́жке*.");
-  assert.match(await add("Сейча́с", "now"), /already in your cards/);
+  assert.match(await add("Го́род", "town"), /already in your cards/);
   assert.match(await add("дорожка", "path"), /already in your words/);
   await page.shot(`${out}/p5-words.png`, ".shell");
 
@@ -213,7 +215,7 @@ export default async function test(page) {
   await page.size(1100, 1400);
   await page.goto("http://127.0.0.1:3918/app/test.html");
   await page.sleep(800);
-  assert.equal(await page.eval(`slovo.words().length`), 6915);
+  assert.equal(await page.eval(`slovo.words().length`), 7318);
   assert.deepEqual(await page.eval(`[...document.querySelectorAll('.due-n b')].map(b => b.textContent)`), ["20", "0", "0"]);
   await page.eval(`location.hash = 'options'`);
   await page.sleep(200);
@@ -223,11 +225,11 @@ export default async function test(page) {
   await page.eval(`location.hash = 'today'`);
   await page.sleep(200);
   await click("[data-a=study]");
-  assert.equal(await page.eval(`document.querySelector('.word').textContent`), "и");
+  assert.equal(await page.eval(`document.querySelector('.word').textContent`), "го́род", "new words start with the book");
   await key(" ");
   await page.sleep(2600); // debounced upload
   let stored = await page.eval(`fetch('/__store').then(r => r.json())`);
-  assert.equal(stored["test@example.com"].cards["и"].q, "L");
+  assert.equal(stored["test@example.com"].cards["город"].q, "L");
   // Another device studies "в" meanwhile; reloading merges both.
   await page.eval(`(async () => { const r = await fetch('/api/anki/test%40example.com'); const p = await r.json();
     p.cards['в'] = { q: 'L', st: 0, at: Date.now(), n: 0, f: 0, a: 1, t: Date.now() + 1000 };
@@ -235,7 +237,7 @@ export default async function test(page) {
   await page.goto("http://127.0.0.1:3918/app/test.html");
   await page.sleep(1200);
   const merged = await page.eval(`Object.keys(slovo.progress.cards).sort()`);
-  assert.deepEqual(merged, ["в", "и"]);
+  assert.deepEqual(merged, ["в", "город"]);
   await page.shot(`${out}/a1-app-today.png`, ".shell");
 
   // ---------- A fixed daily set of new words, then unlimited practice ----------
@@ -246,7 +248,7 @@ export default async function test(page) {
   await page.sleep(200);
   const todayKey = () => page.eval(`new Date(slovo.dayOf(Date.now()) * 864e5).toISOString().slice(0, 10)`);
   const before = await page.eval(`slovo.progress.log[${JSON.stringify(await todayKey())}]`);
-  assert.equal(before.n, 1, "«и» was started earlier today");
+  assert.equal(before.n, 1, "«город» was started earlier today");
   assert.equal(await page.eval(`document.querySelectorAll('.due-n b')[0].textContent`), "4", "5 a day, 1 already started");
   await click("[data-a=study]");
   let intros = 0;

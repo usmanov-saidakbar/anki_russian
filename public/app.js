@@ -150,7 +150,7 @@
   }
 
   // ---------- Progress ----------
-  const DEFAULTS = { newPerDay: 20, dir: "ru", audio: true, work: true, testDays: "daily", testSize: 10, typing: true };
+  const DEFAULTS = { newPerDay: 20, dir: "ru", audio: true, work: true, extra: false, testDays: "daily", testSize: 10, typing: true };
   function emptyProgress() {
     return { v: 1, cards: {}, own: {}, pull: {}, edits: {}, log: {}, settings: { ...DEFAULTS, t: 0 } };
   }
@@ -277,18 +277,24 @@
   let words = [];
   const byId = new Map();
   const LEVELS = ["A1", "A2", "B1", "B2"];
+  const BOOK_URL = "https://www.cambridge.org/core/books/using-russian-vocabulary/FE77DF466AA4F662DC11D86D7F5505C0";
+  const BOOK = "Wade, «Using Russian Vocabulary»";
   let levelTotals = {};
+  let bookUnits = [];
   const posOf = new Map();
   function setWords(list) {
     words = list;
     byId.clear();
     posOf.clear();
     levelTotals = { IT: 0 };
+    const units = new Set();
     for (const [i, w] of list.entries()) {
       byId.set(w.id, w);
       posOf.set(w.id, i);
       levelTotals[w.lvl] = (levelTotals[w.lvl] || 0) + 1;
+      if (w.deck === "book") units.add(w.u);
     }
+    bookUnits = [...units].sort((a, b) => a - b);
   }
   function wordFor(id) {
     const own = P.own[id];
@@ -299,7 +305,9 @@
     return e && e.en ? { ...w, en: e.en } : w;
   }
   const started = (id) => P.cards[id] && P.cards[id].q !== "N";
-  const deckOn = (w) => w.deck !== "work" || P.settings.work;
+  // Data-engineering words and the book's «Additional vocabulary» lists can each be switched off.
+  const deckOn = (w) => (w.deck !== "work" || P.settings.work) && (w.bl !== "x" || P.settings.extra);
+  const inBook = (w) => w.deck === "book" && (w.bl !== "x" || P.settings.extra);
   const ownIds = () =>
     Object.entries(P.own)
       .filter(([, o]) => !o.gone)
@@ -549,6 +557,8 @@
   const app = document.getElementById("app");
   let view = "today";
   const VIEWS = ["today", "words", "stats", "options"];
+  // The grammar note printed next to a book word: plural, genitive, conjugation, government…
+  const bookNoteHTML = (w) => (w.gram ? `<p class="grammar book-note" lang="ru">${h(w.gram)}</p>` : "");
   function grammarHTML(w) {
     if (w.g === "pl") return "noun, plural only";
     if (w.g) return `${{ m: "masculine", f: "feminine", n: "neuter" }[w.g]} noun`;
@@ -564,6 +574,7 @@
     if (w.deck === "own") return "Your word";
     const page = encodeURIComponent(plain(w.ru).replace(/[?!]/g, "").trim());
     const parts = [];
+    if (w.deck === "book") parts.push(link(BOOK_URL, `${BOOK}, Unit ${w.u}${w.bl === "x" ? ", additional vocabulary" : `, level ${w.bl}`}, p. ${w.pg}`));
     if (w.deck === "core") parts.push(link("https://ssharoff.github.io/kelly/", `Kelly list ${w.lvl}`));
     if (w.tr === "wikt") parts.push(link(`https://en.wiktionary.org/wiki/${page}#Russian`, "Wiktionary"));
     else if (w.tr === "or") parts.push(link(`https://en.openrussian.org/ru/${page}`, "OpenRussian"));
@@ -576,6 +587,8 @@
   function levelChip(w) {
     if (w.deck === "own") return '<span class="chip chip-own">Your word</span>';
     if (w.deck === "work") return '<span class="chip chip-it" title="Data engineering and IT">IT</span>';
+    if (w.deck === "book")
+      return `<span class="chip chip-book" title="${h(BOOK)}: Unit ${w.u}${w.bl === "x" ? ", additional vocabulary" : `, level ${w.bl}`}">U${w.u} · ${w.bl === "x" ? "+" : "L" + w.bl}</span>`;
     return `<span class="chip" title="Kelly list level">${h(w.lvl)}</span>${w.work ? '<span class="chip chip-it" title="Also used in IT">IT</span>' : ""}`;
   }
   function streak() {
@@ -593,7 +606,7 @@
     return n;
   }
   function tally() {
-    const t = { learned: 0, strong: 0, learning: 0, byLevel: {} };
+    const t = { learned: 0, strong: 0, learning: 0, byLevel: {}, byUnit: {}, extra: 0 };
     for (const [id, c] of Object.entries(P.cards)) {
       const w = wordFor(id);
       if (!w || c.q === "N" || c.q === "S") continue;
@@ -604,7 +617,18 @@
       t.learned++;
       if ((c.i || 0) >= 21) t.strong++;
       t.byLevel[w.lvl] = (t.byLevel[w.lvl] || 0) + 1;
+      if (w.deck === "book" && w.bl === "x") t.extra++;
+      else if (w.deck === "book") t.byUnit[w.u] = (t.byUnit[w.u] || 0) + 1;
     }
+    t.unitTotal = {};
+    t.extraTotal = 0;
+    for (const w of words) {
+      if (w.deck !== "book") continue;
+      if (w.bl === "x") t.extraTotal++;
+      else t.unitTotal[w.u] = (t.unitTotal[w.u] || 0) + 1;
+    }
+    t.book = bookUnits.reduce((sum, u) => sum + (t.byUnit[u] || 0), 0) + (P.settings.extra ? t.extra : 0);
+    t.bookTotal = bookUnits.reduce((sum, u) => sum + (t.unitTotal[u] || 0), 0) + (P.settings.extra ? t.extraTotal : 0);
     t.core = LEVELS.reduce((sum, l) => sum + (t.byLevel[l] || 0), 0);
     t.coreTotal = LEVELS.reduce((sum, l) => sum + (levelTotals[l] || 0), 0);
     return t;
@@ -633,23 +657,24 @@
       <div class="preview-actions"><button type="button" class="btn small" data-a="tomorrow">Skip to tomorrow</button><button type="button" class="btn small ghost" data-a="wipe">Start over</button></div>
     </div>`;
   }
+  // Progress through the book's word lists, one segment per unit.
   function progressBar(t) {
+    const total = t.bookTotal || 1;
     let acc = 0;
-    const ticks = LEVELS.map((l) => {
-      acc += levelTotals[l] || 0;
-      return { l, at: acc };
+    const ticks = bookUnits.map((u) => {
+      acc += (t.unitTotal[u] || 0) + (P.settings.extra ? words.filter((w) => w.deck === "book" && w.bl === "x" && w.u === u).length : 0);
+      return { u, at: acc };
     });
-    const total = t.coreTotal || 1;
     return `<div class="goal">
-      <div class="goal-head"><span>B2 word list</span><span class="num">${num(t.core)} / ${num(t.coreTotal)}</span></div>
-      <div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="${t.coreTotal}" aria-valuenow="${t.core}" aria-label="B2 words learned">
-        <div class="goal-fill" style="width:${((t.core / total) * 100).toFixed(2)}%"></div>
+      <div class="goal-head"><span>Words from your book</span><span class="num">${num(t.book)} / ${num(t.bookTotal)}</span></div>
+      <div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="${t.bookTotal}" aria-valuenow="${t.book}" aria-label="Book words learned">
+        <div class="goal-fill" style="width:${((t.book / total) * 100).toFixed(2)}%"></div>
         ${ticks.slice(0, -1).map((k) => `<span class="goal-tick" style="left:${((k.at / total) * 100).toFixed(2)}%"></span>`).join("")}
       </div>
       <div class="goal-levels">${ticks
         .map((k, i) => {
           const from = i ? ticks[i - 1].at : 0;
-          return `<span style="width:${(((k.at - from) / total) * 100).toFixed(2)}%">${k.l}</span>`;
+          return `<span style="width:${(((k.at - from) / total) * 100).toFixed(2)}%">Unit ${k.u}</span>`;
         })
         .join("")}</div>
     </div>`;
@@ -685,7 +710,7 @@
         <div><b class="num">${num(((log.n || 0) + (log.o || 0)))}</b><span>new today</span></div>
       </div>
       ${progressBar(t)}
-      <p class="hint">New words come in the order of the <a href="https://ssharoff.github.io/kelly/" target="_blank" rel="noopener">Kelly list</a> (A1 to B2)${P.settings.work ? ", with a data-engineering word every fifth card" : ""}. Add your own words under <a href="#words">Words</a>.</p>
+      <p class="hint">New words come from your vocabulary book, ${link(BOOK_URL, BOOK)}, in the book's order: unit by unit, levels 1 to 3${P.settings.work ? ", with a data-engineering word every fifth card" : ""}. After the book come the B1–B2 words of the ${link("https://ssharoff.github.io/kelly/", "Kelly list")}. Add words from the episodes you watch under <a href="#words">Words</a>.</p>
     </section>`;
   }
 
@@ -732,7 +757,7 @@
   }
   function wordBlock(w) {
     return `<div class="word-row"><h2 class="word" lang="ru">${h(w.ru)}</h2>${speakBtn(w.ru, "Say the word")}</div>
-      ${grammarHTML(w) ? `<p class="grammar">${grammarHTML(w)}</p>` : ""}`;
+      ${bookNoteHTML(w)}${grammarHTML(w) ? `<p class="grammar">${grammarHTML(w)}</p>` : ""}`;
   }
   function detailsBlock(w) {
     const ex = w.ex
@@ -807,7 +832,7 @@
         const want = { new: ["new"], learning: ["learning"], learned: ["learned", "strong", "known"], hidden: ["hidden"] }[W_STATE.filter];
         if (!want.includes(st)) return false;
       }
-      if (W_STATE.level !== "all" && !(w.lvl === W_STATE.level || (W_STATE.level === "IT" && w.work))) return false;
+      if (W_STATE.level === "book" ? w.deck !== "book" : W_STATE.level !== "all" && !(w.lvl === W_STATE.level || (W_STATE.level === "IT" && w.work))) return false;
       return !q || keyOf(w.ru).includes(q) || w.en.toLowerCase().includes(q);
     });
   }
@@ -831,7 +856,7 @@
     const detail = open
       ? `<div class="row-detail">
           ${w.ex ? `<p lang="ru" class="row-ex">${exampleHTML(w.ex)}</p>${w.exEn ? `<p class="ex-en">${h(w.exEn)}</p>` : ""}` : ""}
-          ${grammarHTML(w) ? `<p class="grammar">${grammarHTML(w)}</p>` : ""}
+          ${bookNoteHTML(w)}${grammarHTML(w) ? `<p class="grammar">${grammarHTML(w)}</p>` : ""}
           <p class="sources">${sourcesHTML(w)}${next ? ` · ${h(next)}` : ""}</p>
           ${editing}
           <div class="row-actions">${actions.join("")}</div>
@@ -897,7 +922,7 @@
         continue;
       }
       if (!deckOn(w)) {
-        add("off", "Skipped · data-engineering words are off", -1, w);
+        add("off", w.deck === "work" ? "Skipped · data-engineering words are off" : "Skipped · additional vocabulary is off", -1, w);
         continue;
       }
       const b = batchOf.get(w.id);
@@ -932,7 +957,7 @@
       <div class="filters">
         <label class="search"><span class="sr">Search</span><input id="word-search" type="search" placeholder="Search Russian or English" value="${h(W_STATE.q)}" autocomplete="off"></label>
         <select id="word-filter" aria-label="Status">${opt("all", "All words", W_STATE.filter)}${opt("new", "Not started", W_STATE.filter)}${opt("learning", "Learning", W_STATE.filter)}${opt("learned", "Learned", W_STATE.filter)}${opt("mine", "Your words", W_STATE.filter)}${opt("hidden", "Hidden", W_STATE.filter)}</select>
-        <select id="word-level" aria-label="Level">${opt("all", "All levels", W_STATE.level)}${LEVELS.map((l) => opt(l, l, W_STATE.level)).join("")}${opt("IT", "IT words", W_STATE.level)}</select>
+        <select id="word-level" aria-label="Level">${opt("all", "All words", W_STATE.level)}${opt("book", "Book: all units", W_STATE.level)}${bookUnits.map((u) => opt("U" + u, "Book: unit " + u, W_STATE.level)).join("")}${LEVELS.map((l) => opt(l, "Kelly " + l, W_STATE.level)).join("")}${opt("IT", "IT words", W_STATE.level)}</select>
       </div>
       <div id="word-list">${renderWordList()}</div>
     </section>`;
@@ -988,9 +1013,11 @@
     const lbl30 = days.map((_, i) => (i % 7 === 2 ? fmtDay(d - 29 + i, { day: "numeric", month: "short" }) : ""));
     const lbl14 = forecast.map((_, i) => (i === 0 ? "Today" : i % 3 === 0 ? fmtDay(d + i, { day: "numeric", month: "short" }) : ""));
     const rate = rv ? Math.round(((rv - rl) / rv) * 100) + "%" : "–";
-    const left = words.filter((w) => w.deck === "core" && !started(w.id)).length;
+    const left = words.filter((w) => inBook(w) && !started(w.id)).length;
     const perDay = Math.max(1, P.settings.newPerDay);
-    const finish = left ? `At ${num(perDay)} new words a day you'll have met every word on the B2 list by ${fmtDay(d + Math.ceil(left / perDay), { day: "numeric", month: "long", year: "numeric" })}.` : "You've met every word on the B2 list.";
+    const finish = left
+      ? `At ${num(perDay)} new words a day you'll have met every book word in the app (units ${bookUnits[0]}–${bookUnits[bookUnits.length - 1]}) by ${fmtDay(d + Math.ceil(left / perDay), { day: "numeric", month: "long", year: "numeric" })}.`
+      : "You've met every book word in the app.";
     return `<section class="stats">
       <div class="facts four">
         <div><b class="num">${num(t.learned)}</b><span>words learned</span></div>
@@ -999,8 +1026,10 @@
         <div><b class="num">${rate}</b><span>remembered in reviews, last 30 days</span></div>
       </div>
       ${progressBar(t)}
-      <table class="levels"><thead><tr><th>Level</th><th>Learned</th><th>Words</th></tr></thead><tbody>
-        ${[...LEVELS, "IT"].map((l) => `<tr><td>${l === "IT" ? "IT words" : l}</td><td class="num">${num(t.byLevel[l] || 0)}</td><td class="num">${num(levelTotals[l] || 0)}</td></tr>`).join("")}
+      <table class="levels"><thead><tr><th>Words</th><th>Learned</th><th>Total</th></tr></thead><tbody>
+        ${bookUnits.map((u) => `<tr><td>Book, unit ${u}</td><td class="num">${num(t.byUnit[u] || 0)}</td><td class="num">${num(t.unitTotal[u] || 0)}</td></tr>`).join("")}
+        ${t.extraTotal ? `<tr><td>Book, additional vocabulary${P.settings.extra ? "" : " (off)"}</td><td class="num">${num(t.extra)}</td><td class="num">${num(t.extraTotal)}</td></tr>` : ""}
+        ${[...LEVELS, "IT"].map((l) => `<tr><td>${l === "IT" ? "IT words" : "Kelly " + l}</td><td class="num">${num(t.byLevel[l] || 0)}</td><td class="num">${num(levelTotals[l] || 0)}</td></tr>`).join("")}
       </tbody></table>
       <p class="hint">${h(finish)} You studied for ${plural(Math.round(ms7 / MIN), "minute")} in the last 7 days.</p>
       ${testHistoryHTML()}
@@ -1027,10 +1056,11 @@
          <p class="hint" id="sync-status" data-state="${sync.state}">${h(syncText())}</p>
          <p class="hint">There's no password: anyone who knows the email can see these words. Use the same email as the Russian roadmap.</p>`;
     return `<section class="options">
-      <div class="opt"><h3>New words a day</h3><div class="segs">${[5, 10, 15, 20, 30].map((n) => seg("newPerDay", n, String(n))).join("")}</div>
+      <div class="opt"><h3>New words a day</h3><div class="segs">${[5, 10, 15, 20, 25, 30].map((n) => seg("newPerDay", n, String(n))).join("")}</div>
         <p class="hint">Your daily set of new words. Words you mark «I know it» count too. When the set is done, practise as much as you like: practice never adds new words.</p></div>
       <div class="opt"><h3>Show first</h3><div class="segs">${seg("dir", "ru", "Russian")}${seg("dir", "en", "English")}${seg("dir", "mix", "Mixed")}</div></div>
       <div class="opt"><h3>Read words aloud</h3><div class="segs">${seg("audio", true, "On")}${seg("audio", false, "Off")}</div><p class="hint">${voiceNote}${voice ? ' <button type="button" class="link-btn" data-a="speak" data-text="Приве́т! Как дела́?">Try it</button>' : ""}</p></div>
+      <div class="opt"><h3>Additional vocabulary</h3><div class="segs">${seg("extra", true, "Include")}${seg("extra", false, "Skip")}</div><p class="hint">The lists at the end of each book unit: ${num(words.filter((w) => w.deck === "book" && w.bl === "x").length)} rarer words. When included, each unit's list comes after its level 3.</p></div>
       <div class="opt"><h3>Data-engineering words</h3><div class="segs">${seg("work", true, "Include")}${seg("work", false, "Skip")}</div><p class="hint">${num(levelTotals.IT || 0)} terms from Wiktionary and Wikipedia, one in every five new words.</p></div>
       <div class="opt"><h3>Word tests</h3>
         <div class="segs">${seg("testDays", "daily", "Every day")}${seg("testDays", "mwf", "Mon, Wed, Fri")}${seg("testDays", "sun", "Sundays")}${seg("testDays", "off", "Only when I start one")}</div>
@@ -1045,7 +1075,8 @@
           : '<button type="button" class="btn ghost danger" data-a="wipe">Delete all progress</button>'
       }</div>
       <div class="opt credits"><h3>Where the words come from</h3>
-        <p>Word list and levels: the ${link("https://ssharoff.github.io/kelly/", "Kelly project")} Russian list by Serge Sharoff (CC BY-NC-SA). Meanings, stress and grammar: ${link("https://en.wiktionary.org/", "English Wiktionary")} via ${link("https://kaikki.org/", "kaikki.org")} (CC BY-SA), and ${link("https://en.openrussian.org/", "OpenRussian")} (CC BY-SA) where Wiktionary has no entry. Example sentences: ${link("https://tatoeba.org/", "Tatoeba")} (CC BY 2.0 FR). IT terms: Wiktionary and ${link("https://www.wikidata.org/", "Wikidata")}. Scheduling: FSRS-5, the algorithm Anki uses.</p></div>
+        <p>Book words: Terence Wade, ${link(BOOK_URL, "«Using Russian Vocabulary»")} (Cambridge University Press, 2009), copied as printed: headword, stress, the grammar note next to it and the English meaning. So far the app has the units in the publisher's preview (Unit 1 and the first half of Unit 2). Where a book word is also on the Kelly list, its example sentence comes from there.</p>
+        <p>Words after the book: the ${link("https://ssharoff.github.io/kelly/", "Kelly project")} Russian list by Serge Sharoff (CC BY-NC-SA). Meanings, stress and grammar: ${link("https://en.wiktionary.org/", "English Wiktionary")} via ${link("https://kaikki.org/", "kaikki.org")} (CC BY-SA), and ${link("https://en.openrussian.org/", "OpenRussian")} (CC BY-SA) where Wiktionary has no entry. Example sentences: ${link("https://tatoeba.org/", "Tatoeba")} (CC BY 2.0 FR). IT terms: Wiktionary and ${link("https://www.wikidata.org/", "Wikidata")}. Scheduling: FSRS-5, the algorithm Anki uses.</p></div>
     </section>`;
   }
 
@@ -1422,7 +1453,7 @@
       if (started(listed.id)) W_STATE.addNote = `“${plain(listed.ru)}” is already in your cards (${STATUS_LABEL[status(listed.id)].toLowerCase()}).`;
       else {
         P.pull[listed.id] = now();
-        W_STATE.addNote = `“${plain(listed.ru)}” is on the list (${listed.lvl}): it now comes up next, with the dictionary meaning.`;
+        W_STATE.addNote = `“${plain(listed.ru)}” is on the list (${listed.deck === "book" ? `your book, unit ${listed.u}` : listed.lvl}): it now comes up next, with the ${listed.deck === "book" ? "book's" : "dictionary"} meaning.`;
         save();
       }
       return render();

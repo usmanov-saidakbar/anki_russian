@@ -1,0 +1,7072 @@
+[
+ {
+  "ru": "го́род",
+  "gram": "(pl. города́)",
+  "en": "town, city",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Townscapes",
+  "page": 3
+ },
+ {
+  "ru": "доро́га",
+  "gram": "",
+  "en": "road",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Townscapes",
+  "page": 3
+ },
+ {
+  "ru": "окра́ина",
+  "gram": "(на окра́ине)",
+  "en": "outskirts",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Townscapes",
+  "page": 3
+ },
+ {
+  "ru": "переу́лок",
+  "gram": "(gen. переу́лка) (в переу́лке)",
+  "en": "lane, side street",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Townscapes",
+  "page": 3
+ },
+ {
+  "ru": "пло́щадь",
+  "gram": "(f.) (gen. pl. площаде́й)",
+  "en": "square",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Townscapes",
+  "page": 3
+ },
+ {
+  "ru": "при́город",
+  "gram": "",
+  "en": "suburb",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Townscapes",
+  "page": 3
+ },
+ {
+  "ru": "столи́ца",
+  "gram": "",
+  "en": "capital",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Townscapes",
+  "page": 3
+ },
+ {
+  "ru": "тротуа́р",
+  "gram": "",
+  "en": "pavement",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Townscapes",
+  "page": 3
+ },
+ {
+  "ru": "у́лица",
+  "gram": "(на у́лице)",
+  "en": "street",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Townscapes",
+  "page": 3
+ },
+ {
+  "ru": "центр",
+  "gram": "",
+  "en": "centre",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Townscapes",
+  "page": 3
+ },
+ {
+  "ru": "банк",
+  "gram": "",
+  "en": "bank",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 3
+ },
+ {
+  "ru": "библиоте́ка",
+  "gram": "",
+  "en": "library",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 3
+ },
+ {
+  "ru": "больни́ца",
+  "gram": "",
+  "en": "hospital",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 3
+ },
+ {
+  "ru": "вокза́л",
+  "gram": "(на вокза́ле)",
+  "en": "station (terminus)",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 3
+ },
+ {
+  "ru": "гости́ница",
+  "gram": "",
+  "en": "hotel",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 3
+ },
+ {
+  "ru": "заво́д",
+  "gram": "(на заво́де)",
+  "en": "factory",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 3
+ },
+ {
+  "ru": "зоопа́рк",
+  "gram": "",
+  "en": "zoo",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 4
+ },
+ {
+  "ru": "кино́/кинотеа́тр",
+  "gram": "",
+  "en": "cinema",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 4
+ },
+ {
+  "ru": "музе́й",
+  "gram": "",
+  "en": "museum",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 4
+ },
+ {
+  "ru": "парк",
+  "gram": "",
+  "en": "park",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 4
+ },
+ {
+  "ru": "рестора́н",
+  "gram": "",
+  "en": "restaurant",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 4
+ },
+ {
+  "ru": "ста́нция",
+  "gram": "(на ста́нции)",
+  "en": "station",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 4
+ },
+ {
+  "ru": "теа́тр",
+  "gram": "",
+  "en": "theatre",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 4
+ },
+ {
+  "ru": "це́рковь",
+  "gram": "(f.) (gen./dat./prep. це́ркви, instr. це́рковью, pl. це́ркви церкве́й церква́м церква́ми церква́х)",
+  "en": "church",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 4
+ },
+ {
+  "ru": "шко́ла",
+  "gram": "",
+  "en": "school",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Buildings and parks",
+  "page": 4
+ },
+ {
+  "ru": "апте́ка",
+  "gram": "",
+  "en": "chemist",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "бу́лочная",
+  "gram": "",
+  "en": "baker",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "кни́жный магази́н",
+  "gram": "",
+  "en": "bookshop",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "магази́н «О́вощи и фру́кты»",
+  "gram": "",
+  "en": "greengrocer",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "магази́н «Оде́жда»",
+  "gram": "",
+  "en": "clothes shop",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "мясна́я ла́вка",
+  "gram": "",
+  "en": "butcher",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "парикма́херская",
+  "gram": "(adj. noun)",
+  "en": "hairdresser (парикма́хер ‘hairdresser’)",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "пека́рня",
+  "gram": "",
+  "en": "bakery",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "покупа́ть/купи́ть",
+  "gram": "(куплю́ ку́пишь)",
+  "en": "to buy (де́лать поку́пки ‘to shop’)",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "продма́г",
+  "gram": "",
+  "en": "food store, grocery",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "ры́нок",
+  "gram": "(gen. ры́нка) (на ры́нке)",
+  "en": "market",
+  "unit": 1,
+  "level": 1,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 4
+ },
+ {
+  "ru": "гости́ная",
+  "gram": "(adj. noun)",
+  "en": "living room, drawing room",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "дверь",
+  "gram": "(f.) (на двери́, gen. pl. двере́й)",
+  "en": "door",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "дива́н",
+  "gram": "",
+  "en": "sofa, divan",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "дом",
+  "gram": "(pl. дома́)",
+  "en": "house, block of flats",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "кварти́ра",
+  "gram": "",
+  "en": "flat, apartment",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "квартпла́та",
+  "gram": "",
+  "en": "rent",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "ковёр",
+  "gram": "(gen. ковра́)",
+  "en": "carpet",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "ку́хня",
+  "gram": "(gen. pl. ку́хонь)",
+  "en": "kitchen",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "ле́стница",
+  "gram": "",
+  "en": "stairs, ladder",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "лифт",
+  "gram": "",
+  "en": "lift",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "пол",
+  "gram": "(на полу́)",
+  "en": "floor",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "потоло́к",
+  "gram": "(gen. потолка́)",
+  "en": "ceiling",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "спа́льня",
+  "gram": "(gen. pl. спа́лен)",
+  "en": "bed-room",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "стена́",
+  "gram": "(acc. сте́ну, pl. сте́ны)",
+  "en": "wall",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "столо́вая",
+  "gram": "(adj. noun)",
+  "en": "dining room",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "телеви́зор",
+  "gram": "",
+  "en": "television (also TB), television set",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "эта́ж",
+  "gram": "(gen. этажа́) (пе́рвый эта́ж) (второ́й эта́ж)",
+  "en": "floor, storey (ground floor) (first floor)",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Housing",
+  "page": 5
+ },
+ {
+  "ru": "кни́жный шкаф",
+  "gram": "(в кни́жном шкафу́)",
+  "en": "bookcase",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Furniture",
+  "page": 5
+ },
+ {
+  "ru": "кре́сло",
+  "gram": "",
+  "en": "armchair, easy chair",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Furniture",
+  "page": 5
+ },
+ {
+  "ru": "крова́ть",
+  "gram": "(f.)",
+  "en": "bed",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Furniture",
+  "page": 5
+ },
+ {
+  "ru": "ме́бель",
+  "gram": "(f.)",
+  "en": "furniture",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Furniture",
+  "page": 5
+ },
+ {
+  "ru": "стул",
+  "gram": "(pl. сту́лья сту́льев)",
+  "en": "chair",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Furniture",
+  "page": 5
+ },
+ {
+  "ru": "шкаф",
+  "gram": "(в шкафу́)",
+  "en": "cupboard",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Furniture",
+  "page": 5
+ },
+ {
+  "ru": "посте́ль",
+  "gram": "(f.)",
+  "en": "bed, bedding",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Linen",
+  "page": 6
+ },
+ {
+  "ru": "простыня́",
+  "gram": "(pl. про́стыни просты́нь простыня́м)",
+  "en": "sheet",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Linen",
+  "page": 6
+ },
+ {
+  "ru": "ска́терть",
+  "gram": "(f.)",
+  "en": "tablecloth",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Linen",
+  "page": 6
+ },
+ {
+  "ru": "гла́дить",
+  "gram": "(гла́жу гла́дишь)/вы-",
+  "en": "to iron (гла́дить/вы́- бельё ‘to do the ironing’)",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Domestic appliances",
+  "page": 6
+ },
+ {
+  "ru": "плита́",
+  "gram": "(pl. пли́ты)",
+  "en": "cooker",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Domestic appliances",
+  "page": 6
+ },
+ {
+  "ru": "пылесо́с",
+  "gram": "",
+  "en": "vacuum cleaner (убира́ть/убра́ть [уберу́ уберёшь] пылесо́сом ‘to vacuum’)",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Domestic appliances",
+  "page": 6
+ },
+ {
+  "ru": "стира́льная маши́на",
+  "gram": "",
+  "en": "washing machine",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Domestic appliances",
+  "page": 6
+ },
+ {
+  "ru": "стира́ть/вы-",
+  "gram": "(бельё)",
+  "en": "to wash (clothes)",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Domestic appliances",
+  "page": 6
+ },
+ {
+  "ru": "утю́г",
+  "gram": "(gen. утюга́)",
+  "en": "iron",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Domestic appliances",
+  "page": 6
+ },
+ {
+  "ru": "холоди́льник",
+  "gram": "",
+  "en": "refrigerator",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Domestic appliances",
+  "page": 6
+ },
+ {
+  "ru": "включа́ть/включи́ть",
+  "gram": "",
+  "en": "to switch on",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Lighting",
+  "page": 6
+ },
+ {
+  "ru": "выключа́ть/вы́ключить",
+  "gram": "",
+  "en": "to switch off",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Lighting",
+  "page": 6
+ },
+ {
+  "ru": "ла́мпа",
+  "gram": "",
+  "en": "lamp",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Lighting",
+  "page": 6
+ },
+ {
+  "ru": "ви́лка",
+  "gram": "",
+  "en": "fork",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Kitchenware",
+  "page": 6
+ },
+ {
+  "ru": "горшо́к",
+  "gram": "(gen. горшка́)",
+  "en": "pot",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Kitchenware",
+  "page": 6
+ },
+ {
+  "ru": "кастрю́ля",
+  "gram": "",
+  "en": "saucepan",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Kitchenware",
+  "page": 6
+ },
+ {
+  "ru": "ло́жка",
+  "gram": "",
+  "en": "spoon",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Kitchenware",
+  "page": 6
+ },
+ {
+  "ru": "мыть",
+  "gram": "(мо́ю мо́ешь)/вы- (посу́ду)",
+  "en": "to wash (the dishes)",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Kitchenware",
+  "page": 6
+ },
+ {
+  "ru": "нож",
+  "gram": "(gen. ножа́)",
+  "en": "knife",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Kitchenware",
+  "page": 6
+ },
+ {
+  "ru": "сковорода́",
+  "gram": "(pl. ско́вороды ско́вород ско́вородам)",
+  "en": "frying pan",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Kitchenware",
+  "page": 6
+ },
+ {
+  "ru": "таре́лка",
+  "gram": "",
+  "en": "plate",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Kitchenware",
+  "page": 6
+ },
+ {
+  "ru": "ча́шка",
+  "gram": "",
+  "en": "cup",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Kitchenware",
+  "page": 6
+ },
+ {
+  "ru": "ва́нна",
+  "gram": "",
+  "en": "bath",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Plumbing, bathroom",
+  "page": 7
+ },
+ {
+  "ru": "ва́нная",
+  "gram": "(adj. noun)",
+  "en": "bathroom",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Plumbing, bathroom",
+  "page": 7
+ },
+ {
+  "ru": "душ",
+  "gram": "",
+  "en": "shower",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Plumbing, bathroom",
+  "page": 7
+ },
+ {
+  "ru": "закрыва́ть/закры́ть",
+  "gram": "(закро́ю закро́ешь) (во́ду)",
+  "en": "to close, to turn off (water)",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Plumbing, bathroom",
+  "page": 7
+ },
+ {
+  "ru": "кран",
+  "gram": "",
+  "en": "tap",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Plumbing, bathroom",
+  "page": 7
+ },
+ {
+  "ru": "открыва́ть/откры́ть",
+  "gram": "(откро́ю откро́ешь) (кран)",
+  "en": "to open, to turn on (the tap)",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Plumbing, bathroom",
+  "page": 7
+ },
+ {
+  "ru": "мы́ло",
+  "gram": "",
+  "en": "soap",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Plumbing, bathroom",
+  "page": 7
+ },
+ {
+  "ru": "туале́т",
+  "gram": "",
+  "en": "toilet",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Plumbing, bathroom",
+  "page": 7
+ },
+ {
+  "ru": "умыва́льник",
+  "gram": "",
+  "en": "hand basin, wash basin",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Plumbing, bathroom",
+  "page": 7
+ },
+ {
+  "ru": "кра́сить",
+  "gram": "(кра́шу кра́сишь)/по-",
+  "en": "to paint",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Decor",
+  "page": 7
+ },
+ {
+  "ru": "кра́ска",
+  "gram": "",
+  "en": "paint, paintwork",
+  "unit": 1,
+  "level": 1,
+  "section": "Domestic accommodation",
+  "sub": "Decor",
+  "page": 7
+ },
+ {
+  "ru": "клу́мба",
+  "gram": "",
+  "en": "flower-bed",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "General",
+  "page": 7
+ },
+ {
+  "ru": "куст",
+  "gram": "(gen. куста́)",
+  "en": "bush",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "General",
+  "page": 7
+ },
+ {
+  "ru": "лист",
+  "gram": "(gen. листа́, pl. ли́стья ли́стьев)",
+  "en": "leaf",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "General",
+  "page": 7
+ },
+ {
+  "ru": "сад",
+  "gram": "(в саду́)",
+  "en": "garden",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "General",
+  "page": 7
+ },
+ {
+  "ru": "копа́ть/вы-",
+  "gram": "",
+  "en": "to dig",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "Tools",
+  "page": 8
+ },
+ {
+  "ru": "лопа́та",
+  "gram": "",
+  "en": "spade",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "Tools",
+  "page": 8
+ },
+ {
+  "ru": "расти́",
+  "gram": "(растёт; рос росла́)/вы-",
+  "en": "to grow (intransitive)",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 8
+ },
+ {
+  "ru": "трава́",
+  "gram": "",
+  "en": "grass",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 8
+ },
+ {
+  "ru": "ви́шня",
+  "gram": "",
+  "en": "cherry",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "Fruit and vegetables",
+  "page": 8
+ },
+ {
+  "ru": "капу́ста",
+  "gram": "",
+  "en": "cabbage",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "Fruit and vegetables",
+  "page": 8
+ },
+ {
+  "ru": "карто́фель",
+  "gram": "(m.) (карто́шка ‘potatoes, a potato’)",
+  "en": "potatoes",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "Fruit and vegetables",
+  "page": 8
+ },
+ {
+  "ru": "помидо́р",
+  "gram": "",
+  "en": "tomato",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "Fruit and vegetables",
+  "page": 8
+ },
+ {
+  "ru": "я́блоко",
+  "gram": "(pl. я́блоки)",
+  "en": "apple",
+  "unit": 1,
+  "level": 1,
+  "section": "Garden",
+  "sub": "Fruit and vegetables",
+  "page": 8
+ },
+ {
+  "ru": "авто́бусная остано́вка",
+  "gram": "",
+  "en": "bus stop",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "автовокза́л",
+  "gram": "(на автовокза́ле)",
+  "en": "bus station",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "движе́ние",
+  "gram": "",
+  "en": "traffic",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "метроста́нция",
+  "gram": "",
+  "en": "Underground station",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "отделе́ние мили́ции",
+  "gram": "",
+  "en": "police station",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "светофо́р",
+  "gram": "",
+  "en": "traffic lights",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "собо́р",
+  "gram": "",
+  "en": "cathedral",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "тюрьма́",
+  "gram": "(pl. тю́рьмы тю́рем)",
+  "en": "prison",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "у́личный фона́рь",
+  "gram": "(m.) (gen. у́личного фонаря́)",
+  "en": "street lamp",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "университе́т",
+  "gram": "",
+  "en": "university",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "шоссе́",
+  "gram": "(n. indecl.)",
+  "en": "highway",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 15
+ },
+ {
+  "ru": "газе́тный кио́ск",
+  "gram": "",
+  "en": "newspaper stand, kiosk",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 15
+ },
+ {
+  "ru": "конди́терская",
+  "gram": "(adj. noun)",
+  "en": "confectioner (конди́тер ‘confectioner’)",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 15
+ },
+ {
+  "ru": "магази́н «игру́шки»",
+  "gram": "",
+  "en": "toy shop",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 15
+ },
+ {
+  "ru": "магази́н канцеля́рских това́ров",
+  "gram": "(канцтова́ров)",
+  "en": "stationer",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 15
+ },
+ {
+  "ru": "моло́чный магази́н",
+  "gram": "",
+  "en": "dairy",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 15
+ },
+ {
+  "ru": "обувно́й магази́н",
+  "gram": "",
+  "en": "shoe shop (о́бувь ‘footwear’)",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 15
+ },
+ {
+  "ru": "о́чередь",
+  "gram": "(f., gen. pl. очереде́й) (за + instr.)",
+  "en": "queue (for)",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 15
+ },
+ {
+  "ru": "пра́чечная",
+  "gram": "(adj. noun)",
+  "en": "launderette",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 15
+ },
+ {
+  "ru": "прила́вок",
+  "gram": "(gen. прила́вка)",
+  "en": "counter",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 16
+ },
+ {
+  "ru": "ры́бный магази́н",
+  "gram": "",
+  "en": "fishmonger",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 16
+ },
+ {
+  "ru": "универма́г",
+  "gram": "",
+  "en": "department store",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 16
+ },
+ {
+  "ru": "универса́м",
+  "gram": "",
+  "en": "supermarket",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 16
+ },
+ {
+  "ru": "цвето́чный магази́н",
+  "gram": "",
+  "en": "florist (pl. цветы́ цвето́в ‘flowers’)",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 16
+ },
+ {
+  "ru": "химчи́стка",
+  "gram": "",
+  "en": "dry cleaner",
+  "unit": 1,
+  "level": 2,
+  "section": "Towns",
+  "sub": "Shops",
+  "page": 16
+ },
+ {
+  "ru": "обставля́ть/обста́вить",
+  "gram": "(обста́влю обста́вишь)",
+  "en": "to furnish",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "General",
+  "page": 16
+ },
+ {
+  "ru": "сдава́ть",
+  "gram": "(сдаю́ сдаёшь)/сдать (сдам сдашь) ко́мнату",
+  "en": "to let out a room",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "General",
+  "page": 16
+ },
+ {
+  "ru": "снима́ть/снять",
+  "gram": "(сниму́ сни́мешь) ко́мнату",
+  "en": "to rent, take a room",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "General",
+  "page": 16
+ },
+ {
+  "ru": "электри́чество",
+  "gram": "",
+  "en": "electricity",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "General",
+  "page": 16
+ },
+ {
+  "ru": "кры́ша",
+  "gram": "",
+  "en": "roof",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Parts of buildings",
+  "page": 16
+ },
+ {
+  "ru": "пери́ла",
+  "gram": "(gen. пери́л)",
+  "en": "railing, handrail",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Parts of buildings",
+  "page": 16
+ },
+ {
+  "ru": "подва́л",
+  "gram": "",
+  "en": "cellar, basement",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Parts of buildings",
+  "page": 16
+ },
+ {
+  "ru": "прихо́жая",
+  "gram": "(adj. noun)",
+  "en": "entrance hall",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Parts of buildings",
+  "page": 16
+ },
+ {
+  "ru": "ба́нка",
+  "gram": "(жестяна́я ба́нка ‘tin can’)",
+  "en": "jar",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "блю́до",
+  "gram": "",
+  "en": "dish",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "вари́ть/с-",
+  "gram": "(яйцо́)",
+  "en": "to boil (an egg)",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "гото́вить",
+  "gram": "(гото́влю гото́вишь)/при-",
+  "en": "to prepare, cook",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "жа́рить/за-",
+  "gram": "(котле́ты)",
+  "en": "to fry (chops)",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "кипяти́ть",
+  "gram": "(кипячу́ кипяти́шь)/вс- (во́ду, молоко́)",
+  "en": "to boil (water, milk)",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "консе́рвный нож",
+  "gram": "(gen. консе́рвного ножа́)",
+  "en": "tin-opener",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "кры́шка",
+  "gram": "",
+  "en": "lid",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "кувши́н",
+  "gram": "",
+  "en": "jug",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "ми́ска",
+  "gram": "",
+  "en": "bowl",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "му́сорное ведро́",
+  "gram": "",
+  "en": "rubbish bin",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "открыва́лка",
+  "gram": "",
+  "en": "bottle-opener",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "по́лка",
+  "gram": "",
+  "en": "shelf, rack",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "посудомо́ечная маши́на",
+  "gram": "",
+  "en": "dishwasher",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "са́харница",
+  "gram": "",
+  "en": "sugar bowl",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "ча́йник",
+  "gram": "",
+  "en": "kettle; teapot",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Kitchenware and food preparation",
+  "page": 17
+ },
+ {
+  "ru": "вви́нчивать/ввинти́ть",
+  "gram": "(ввинчу́ ввинти́шь) (в + acc.)",
+  "en": "to screw in(to)",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Tools",
+  "page": 17
+ },
+ {
+  "ru": "винт",
+  "gram": "(gen. винта́)",
+  "en": "screw",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Tools",
+  "page": 17
+ },
+ {
+  "ru": "гвоздь",
+  "gram": "(m., gen. гвоздя́, pl. гво́зди гвозде́й)",
+  "en": "nail",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Tools",
+  "page": 17
+ },
+ {
+  "ru": "молото́к",
+  "gram": "(gen. молотка́)",
+  "en": "hammer",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Tools",
+  "page": 17
+ },
+ {
+  "ru": "напи́льник",
+  "gram": "",
+  "en": "file",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Tools",
+  "page": 17
+ },
+ {
+  "ru": "отвёртка",
+  "gram": "",
+  "en": "screwdriver",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Tools",
+  "page": 17
+ },
+ {
+  "ru": "щипцы́",
+  "gram": "(gen. щипцо́в)",
+  "en": "tongs, pliers (for holding, gripping)",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Tools",
+  "page": 17
+ },
+ {
+  "ru": "абажу́р",
+  "gram": "",
+  "en": "lampshade",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 17
+ },
+ {
+  "ru": "зе́ркало",
+  "gram": "(pl. зеркала́ зерка́л)",
+  "en": "mirror",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 17
+ },
+ {
+  "ru": "звоно́к",
+  "gram": "(gen. звонка́)",
+  "en": "doorbell",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 17
+ },
+ {
+  "ru": "комо́д",
+  "gram": "",
+  "en": "chest of drawers",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 17
+ },
+ {
+  "ru": "ла́мпочка",
+  "gram": "",
+  "en": "light bulb",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 17
+ },
+ {
+  "ru": "одея́ло",
+  "gram": "",
+  "en": "blanket",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 17
+ },
+ {
+  "ru": "око́нное стекло́",
+  "gram": "(pl. око́нные стёкла око́нных стёкол)",
+  "en": "window pane",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 18
+ },
+ {
+  "ru": "пле́чики",
+  "gram": "(gen. пле́чиков)",
+  "en": "coat-hanger",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 18
+ },
+ {
+  "ru": "поду́шка",
+  "gram": "",
+  "en": "cushion, pillow",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 18
+ },
+ {
+  "ru": "полови́к",
+  "gram": "(gen. половика́)",
+  "en": "doormat",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 18
+ },
+ {
+  "ru": "посте́льное бельё",
+  "gram": "",
+  "en": "bedclothes",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 18
+ },
+ {
+  "ru": "про́бка",
+  "gram": "",
+  "en": "cork, fuse",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 18
+ },
+ {
+  "ru": "ру́чка",
+  "gram": "",
+  "en": "handle",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 18
+ },
+ {
+  "ru": "суши́лка",
+  "gram": "",
+  "en": "dryer",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 18
+ },
+ {
+  "ru": "фона́рик",
+  "gram": "",
+  "en": "torch",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 18
+ },
+ {
+  "ru": "я́щик",
+  "gram": "",
+  "en": "drawer",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Household objects",
+  "page": 18
+ },
+ {
+  "ru": "батаре́я",
+  "gram": "",
+  "en": "radiator",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Plumbing and heat engineering",
+  "page": 18
+ },
+ {
+  "ru": "водопрово́дная труба́",
+  "gram": "(pl. водопрово́дные тру́бы)",
+  "en": "water-pipe",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Plumbing and heat engineering",
+  "page": 18
+ },
+ {
+  "ru": "канализа́ция",
+  "gram": "",
+  "en": "plumbing, waste pipes, sewerage system",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Plumbing and heat engineering",
+  "page": 18
+ },
+ {
+  "ru": "ра́ковина",
+  "gram": "",
+  "en": "sink",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Plumbing and heat engineering",
+  "page": 18
+ },
+ {
+  "ru": "туале́тная бума́га",
+  "gram": "",
+  "en": "toilet paper",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Plumbing and heat engineering",
+  "page": 18
+ },
+ {
+  "ru": "унита́з",
+  "gram": "",
+  "en": "toilet bowl",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Plumbing and heat engineering",
+  "page": 18
+ },
+ {
+  "ru": "центра́льное отопле́ние",
+  "gram": "",
+  "en": "central heating",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Plumbing and heat engineering",
+  "page": 18
+ },
+ {
+  "ru": "занаве́ска",
+  "gram": "",
+  "en": "curtain",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Decor",
+  "page": 18
+ },
+ {
+  "ru": "маля́р",
+  "gram": "(gen. маляра́)",
+  "en": "painter",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Decor",
+  "page": 18
+ },
+ {
+  "ru": "обо́и",
+  "gram": "(gen. обо́ев)",
+  "en": "wallpaper (окле́ивать/окле́ить обо́ями ‘to wallpaper’)",
+  "unit": 1,
+  "level": 2,
+  "section": "Accommodation",
+  "sub": "Decor",
+  "page": 18
+ },
+ {
+  "ru": "огоро́д",
+  "gram": "",
+  "en": "kitchen garden, market garden",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "General",
+  "page": 19
+ },
+ {
+  "ru": "садо́вая скаме́йка",
+  "gram": "",
+  "en": "garden seat, bench",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "General",
+  "page": 19
+ },
+ {
+  "ru": "сара́й",
+  "gram": "",
+  "en": "shed",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "General",
+  "page": 19
+ },
+ {
+  "ru": "тепли́ца",
+  "gram": "",
+  "en": "greenhouse",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "General",
+  "page": 19
+ },
+ {
+  "ru": "выра́щивать/вы́растить",
+  "gram": "(вы́ращу вы́растишь)",
+  "en": "to grow (trans.)",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Plants",
+  "page": 19
+ },
+ {
+  "ru": "гвозди́ка",
+  "gram": "",
+  "en": "carnation",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Plants",
+  "page": 19
+ },
+ {
+  "ru": "колоко́льчик",
+  "gram": "",
+  "en": "bluebell",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Plants",
+  "page": 19
+ },
+ {
+  "ru": "мак",
+  "gram": "",
+  "en": "poppy",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Plants",
+  "page": 19
+ },
+ {
+  "ru": "маргари́тка",
+  "gram": "",
+  "en": "daisy",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Plants",
+  "page": 19
+ },
+ {
+  "ru": "незабу́дка",
+  "gram": "",
+  "en": "forget-me-not",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Plants",
+  "page": 19
+ },
+ {
+  "ru": "па́хнуть",
+  "gram": "(past пах or па́хнул па́хла) (+ instr.)",
+  "en": "to smell (of)",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Plants",
+  "page": 19
+ },
+ {
+  "ru": "подсне́жник",
+  "gram": "",
+  "en": "snowdrop",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Plants",
+  "page": 19
+ },
+ {
+  "ru": "сире́нь",
+  "gram": "(f.)",
+  "en": "lilac",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Plants",
+  "page": 19
+ },
+ {
+  "ru": "фиа́лка",
+  "gram": "",
+  "en": "violet",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Plants",
+  "page": 19
+ },
+ {
+  "ru": "гру́ша",
+  "gram": "",
+  "en": "pear",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Fruit and vegetables",
+  "page": 19
+ },
+ {
+  "ru": "ды́ня",
+  "gram": "",
+  "en": "melon",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Fruit and vegetables",
+  "page": 19
+ },
+ {
+  "ru": "земляни́ка",
+  "gram": "",
+  "en": "strawberries",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Fruit and vegetables",
+  "page": 19
+ },
+ {
+  "ru": "лук",
+  "gram": "(лу́ковица ‘an onion’)",
+  "en": "onions",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Fruit and vegetables",
+  "page": 19
+ },
+ {
+  "ru": "морко́вь",
+  "gram": "(f.) (морко́вка ‘a carrot’)",
+  "en": "carrots",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Fruit and vegetables",
+  "page": 19
+ },
+ {
+  "ru": "огуре́ц",
+  "gram": "(gen. огурца́)",
+  "en": "cucumber",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Fruit and vegetables",
+  "page": 20
+ },
+ {
+  "ru": "пе́рсик",
+  "gram": "",
+  "en": "peach",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Fruit and vegetables",
+  "page": 20
+ },
+ {
+  "ru": "сли́ва",
+  "gram": "",
+  "en": "plum",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Fruit and vegetables",
+  "page": 20
+ },
+ {
+  "ru": "ви́лы",
+  "gram": "(gen. вил)",
+  "en": "garden fork",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Garden tools and gardening",
+  "page": 20
+ },
+ {
+  "ru": "гра́бли",
+  "gram": "(gen. гра́бель)",
+  "en": "rake",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Garden tools and gardening",
+  "page": 20
+ },
+ {
+  "ru": "ле́йка",
+  "gram": "",
+  "en": "watering can",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Garden tools and gardening",
+  "page": 20
+ },
+ {
+  "ru": "полива́ть/поли́ть",
+  "gram": "(полью́ польёшь)",
+  "en": "to water",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Garden tools and gardening",
+  "page": 20
+ },
+ {
+  "ru": "сажа́ть/посади́ть",
+  "gram": "(посажу́ поса́дишь)",
+  "en": "to plant, pot",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Garden tools and gardening",
+  "page": 20
+ },
+ {
+  "ru": "се́ять",
+  "gram": "(се́ю се́ешь)/по-",
+  "en": "to sow",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Garden tools and gardening",
+  "page": 20
+ },
+ {
+  "ru": "шланг",
+  "gram": "",
+  "en": "hose-pipe",
+  "unit": 1,
+  "level": 2,
+  "section": "Gardens and gardening",
+  "sub": "Garden tools and gardening",
+  "page": 20
+ },
+ {
+  "ru": "доро́жный знак",
+  "gram": "",
+  "en": "road sign",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "зелёный по́яс",
+  "gram": "",
+  "en": "green belt",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "кольцева́я доро́га",
+  "gram": "",
+  "en": "ring road",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "населённый пункт",
+  "gram": "",
+  "en": "inhabited area, locality",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "перекрёсток",
+  "gram": "",
+  "en": "crossroads",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "пешехо́д",
+  "gram": "",
+  "en": "pedestrian",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "пешехо́дная зо́на",
+  "gram": "",
+  "en": "pedestrian precinct",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "пешехо́дный перехо́д",
+  "gram": "",
+  "en": "pedestrian crossing",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "регули́ровать",
+  "gram": "(регули́рую регули́руешь)",
+  "en": "to regulate, control, direct",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "суд",
+  "gram": "",
+  "en": "court",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "телефо́н-автома́т",
+  "gram": "",
+  "en": "public telephone",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "тунне́ль",
+  "gram": "(m.)",
+  "en": "underpass",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "тупи́к",
+  "gram": "(gen. тупика́) (зайти́ в тупи́к ‘to reach a deadlock’)",
+  "en": "dead end, blind alley",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Townscape",
+  "page": 26
+ },
+ {
+  "ru": "бути́к",
+  "gram": "",
+  "en": "boutique",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Shops and businesses",
+  "page": 26
+ },
+ {
+  "ru": "галантере́я",
+  "gram": "",
+  "en": "haberdasher",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Shops and businesses",
+  "page": 26
+ },
+ {
+  "ru": "обме́нное бюро́",
+  "gram": "(n. indecl.)",
+  "en": "bureau de change",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Shops and businesses",
+  "page": 26
+ },
+ {
+  "ru": "сапо́жная мастерска́я",
+  "gram": "(adj. noun)",
+  "en": "cobbler",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Shops and businesses",
+  "page": 26
+ },
+ {
+  "ru": "суперма́ркет",
+  "gram": "",
+  "en": "supermarket",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Shops and businesses",
+  "page": 26
+ },
+ {
+  "ru": "торго́вый центр",
+  "gram": "",
+  "en": "shopping centre",
+  "unit": 1,
+  "level": 3,
+  "section": "Towns",
+  "sub": "Shops and businesses",
+  "page": 26
+ },
+ {
+  "ru": "жили́щное строи́тельство",
+  "gram": "",
+  "en": "house building",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "General",
+  "page": 27
+ },
+ {
+  "ru": "жило́й масси́в",
+  "gram": "",
+  "en": "(large) housing estate",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "General",
+  "page": 27
+ },
+ {
+  "ru": "особня́к",
+  "gram": "(gen. особняка́)",
+  "en": "detached house",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "General",
+  "page": 27
+ },
+ {
+  "ru": "балко́н",
+  "gram": "",
+  "en": "balcony",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "ба́шня",
+  "gram": "",
+  "en": "tower",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "благоустро́енный",
+  "gram": "",
+  "en": "well-appointed",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "двойны́е ра́мы",
+  "gram": "",
+  "en": "double-glazing",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "домофо́н",
+  "gram": "",
+  "en": "entryphone",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "изоля́ция",
+  "gram": "",
+  "en": "insulation",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "кондициони́рование во́здуха",
+  "gram": "",
+  "en": "air-conditioning",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "ле́стничная площа́дка",
+  "gram": "",
+  "en": "landing",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "мусоропрово́д",
+  "gram": "",
+  "en": "waste disposal unit",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "пожа́рная ле́стница",
+  "gram": "",
+  "en": "fire escape",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "розе́тка",
+  "gram": "",
+  "en": "power point",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "ступе́нька",
+  "gram": "",
+  "en": "step",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "шпиль",
+  "gram": "(m.)",
+  "en": "spire; capstan",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "ште́псель",
+  "gram": "(m.)",
+  "en": "electric plug",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "электри́ческая сеть",
+  "gram": "",
+  "en": "electrical circuit",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Features of buildings",
+  "page": 27
+ },
+ {
+  "ru": "анте́нна",
+  "gram": "",
+  "en": "aerial",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 27
+ },
+ {
+  "ru": "буфе́т",
+  "gram": "",
+  "en": "sideboard, buffet",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 27
+ },
+ {
+  "ru": "вентиля́тор",
+  "gram": "",
+  "en": "fan",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 27
+ },
+ {
+  "ru": "ве́шалка",
+  "gram": "",
+  "en": "rack, hatstand, coatstand",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 27
+ },
+ {
+  "ru": "гарниту́р",
+  "gram": "",
+  "en": "suite",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 27
+ },
+ {
+  "ru": "духо́вка",
+  "gram": "",
+  "en": "oven",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 27
+ },
+ {
+  "ru": "лино́леум",
+  "gram": "",
+  "en": "linoleum",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 27
+ },
+ {
+  "ru": "пли́тка",
+  "gram": "",
+  "en": "floor tile",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 27
+ },
+ {
+  "ru": "подно́с",
+  "gram": "",
+  "en": "tray",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 27
+ },
+ {
+  "ru": "покрыва́ло",
+  "gram": "",
+  "en": "bedspread",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 28
+ },
+ {
+  "ru": "посте́льные принадле́жности",
+  "gram": "",
+  "en": "bedding",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 28
+ },
+ {
+  "ru": "таре́лка",
+  "gram": "",
+  "en": "satellite dish",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 28
+ },
+ {
+  "ru": "туале́тный сто́лик",
+  "gram": "",
+  "en": "dressing table",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 28
+ },
+ {
+  "ru": "фо́рточка",
+  "gram": "",
+  "en": "dormer window",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 28
+ },
+ {
+  "ru": "што́ра",
+  "gram": "",
+  "en": "blind",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Household items",
+  "page": 28
+ },
+ {
+  "ru": "кисть",
+  "gram": "(f.)",
+  "en": "paintbrush",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Tools",
+  "page": 28
+ },
+ {
+  "ru": "кле́щи",
+  "gram": "(gen. клеще́й)",
+  "en": "pincers (for extracting)",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Tools",
+  "page": 28
+ },
+ {
+  "ru": "втыка́ть/воткну́ть",
+  "gram": "(в + acc.)",
+  "en": "to stick into",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "вытира́ть/вы́тереть",
+  "gram": "(вы́тру вы́трешь; вы́тер вы́терла)",
+  "en": "to mop up, dry",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "задёргивать/задёрнуть",
+  "gram": "",
+  "en": "to draw, close (curtains)",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "отдёргивать/отдёрнуть",
+  "gram": "",
+  "en": "to draw back, open (curtains)",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "перегора́ть/перегоре́ть",
+  "gram": "(перегори́т)",
+  "en": "to fuse (intrans.)",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "подключа́ть/подключи́ть",
+  "gram": "(к)",
+  "en": "to plumb in, wire up (to)",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "ре́зать",
+  "gram": "(ре́жу ре́жешь)/раз-",
+  "en": "to chop, slice (наре́зать + gen. ‘to cut a quantity’)",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "ремо́нт",
+  "gram": "",
+  "en": "repair, refurbishment",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "суши́ть/вы-",
+  "gram": "",
+  "en": "to dry",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "убо́рка",
+  "gram": "",
+  "en": "cleaning, tidying",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "чи́стить",
+  "gram": "(чи́щу чи́стишь)/по- or о-",
+  "en": "to clean, peel",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Actions and processes",
+  "page": 28
+ },
+ {
+  "ru": "гриль",
+  "gram": "(m.)",
+  "en": "grill",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "ку́хонная у́тварь",
+  "gram": "",
+  "en": "kitchen utensils",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "ку́хонный комба́йн",
+  "gram": "",
+  "en": "food processor",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "микрово́лновая печь",
+  "gram": "",
+  "en": "microwave",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "ми́ксер",
+  "gram": "",
+  "en": "blender, mixer",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "морози́льник",
+  "gram": "",
+  "en": "freezer",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "мясору́бка",
+  "gram": "",
+  "en": "mincer",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "скорова́рка",
+  "gram": "",
+  "en": "pressure cooker",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "смеси́тель",
+  "gram": "(m.)",
+  "en": "blender",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "соковыжима́лка",
+  "gram": "",
+  "en": "juice extractor",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "стира́льный порошо́к",
+  "gram": "(gen. стира́льного порошка́)",
+  "en": "washing powder",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "сти́рка",
+  "gram": "",
+  "en": "(act of) washing, laundering",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "суши́ть/вы- or выжима́ть/вы́жать",
+  "gram": "(вы́жму вы́жмешь) до́суха в центрифу́ге",
+  "en": "to spin-dry",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "центрифу́га-суши́лка",
+  "gram": "",
+  "en": "spin-drier",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Food preparation, laundering",
+  "page": 29
+ },
+ {
+  "ru": "ве́шалка для полоте́нец",
+  "gram": "",
+  "en": "towel rail",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Bathroom",
+  "page": 29
+ },
+ {
+  "ru": "кипяти́льник",
+  "gram": "",
+  "en": "water heater",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Bathroom",
+  "page": 29
+ },
+ {
+  "ru": "мы́льница",
+  "gram": "",
+  "en": "soap dish",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Bathroom",
+  "page": 29
+ },
+ {
+  "ru": "закла́дывать/заложи́ть",
+  "gram": "(за + acc.)",
+  "en": "to mortgage (for a particular sum)",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Buying, selling, renting property",
+  "page": 30
+ },
+ {
+  "ru": "ипоте́чная ссу́да",
+  "gram": "",
+  "en": "mortgage",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Buying, selling, renting property",
+  "page": 30
+ },
+ {
+  "ru": "ссу́да на поку́пку до́ма",
+  "gram": "",
+  "en": "mortgage",
+  "unit": 1,
+  "level": 3,
+  "section": "Housing",
+  "sub": "Buying, selling, renting property",
+  "page": 30
+ },
+ {
+  "ru": "бесе́дка",
+  "gram": "",
+  "en": "summerhouse",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "General",
+  "page": 30
+ },
+ {
+  "ru": "газо́н",
+  "gram": "",
+  "en": "lawn",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "General",
+  "page": 30
+ },
+ {
+  "ru": "гря́дка",
+  "gram": "",
+  "en": "bed, drill (in vegetable garden)",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "General",
+  "page": 30
+ },
+ {
+  "ru": "жива́я и́згородь",
+  "gram": "(f.)",
+  "en": "hedge",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "General",
+  "page": 30
+ },
+ {
+  "ru": "василёк",
+  "gram": "(gen. василька́)",
+  "en": "cornflower",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "колю́чка",
+  "gram": "",
+  "en": "thorn",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "коси́ть",
+  "gram": "(кошу́ ко́сишь)/с-",
+  "en": "to mow",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "ла́ндыш",
+  "gram": "",
+  "en": "lily-of-the-valley",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "ни́кнуть",
+  "gram": "(past ник or ни́кнул ни́кла)/по-",
+  "en": "to wilt",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "подсо́лнечник",
+  "gram": "",
+  "en": "sunflower",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "поло́ть",
+  "gram": "(полю́ по́лешь)/вы-",
+  "en": "to weed",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "по́чка",
+  "gram": "",
+  "en": "bud (of flower or leaf)",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "се́мя",
+  "gram": "(n.) (gen./dat./prep. се́мени instr. се́менем pl. семена́ семя́н семена́м)",
+  "en": "seed",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "сорня́к",
+  "gram": "(gen. сорняка́)",
+  "en": "weed",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "сте́бель",
+  "gram": "(m., gen. сте́бля)",
+  "en": "stem",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "удобре́ния",
+  "gram": "",
+  "en": "fertilisers",
+  "unit": 1,
+  "level": 3,
+  "section": "Garden",
+  "sub": "Plants",
+  "page": 30
+ },
+ {
+  "ru": "алле́я",
+  "gram": "",
+  "en": "avenue",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "велосипе́дная доро́жка",
+  "gram": "",
+  "en": "cycle track",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "вход в метро́",
+  "gram": "",
+  "en": "entrance to the Underground",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "звони́ть + dat. of person, в/на + acc. of place",
+  "gram": "",
+  "en": "to ring (someone, somewhere)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "направле́ние",
+  "gram": "",
+  "en": "direction",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "объе́зд",
+  "gram": "",
+  "en": "bypass",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "посёлок",
+  "gram": "(gen. посёлка)",
+  "en": "village, settlement",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "прое́зд",
+  "gram": "",
+  "en": "thoroughfare (for vehicles)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "прохо́д",
+  "gram": "",
+  "en": "thoroughfare (for pedestrians)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "сквер",
+  "gram": "",
+  "en": "small public garden",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "сто́чная кана́ва",
+  "gram": "",
+  "en": "gutter",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "тураге́нтство",
+  "gram": "",
+  "en": "tourist agency",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "у́лица с односторо́нним движе́нием",
+  "gram": "",
+  "en": "one-way street",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 35
+ },
+ {
+  "ru": "достопримеча́тельности",
+  "gram": "",
+  "en": "sights",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "объезжа́ть/объе́хать",
+  "gram": "(объе́ду объе́дешь)",
+  "en": "to bypass",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "райо́н",
+  "gram": "",
+  "en": "district",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "мече́ть",
+  "gram": "(f.)",
+  "en": "mosque",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "монасты́рь",
+  "gram": "(m., gen. монастыря́)",
+  "en": "monastery; convent (же́нский монасты́рь)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "моли́ться",
+  "gram": "",
+  "en": "to pray",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "обме́нивать/обменя́ть",
+  "gram": "(acc. + на + acc.)",
+  "en": "to exchange (something for something else)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "оте́ль",
+  "gram": "(m.)",
+  "en": "hotel",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "лека́рство",
+  "gram": "",
+  "en": "medicine",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "магази́н «Автомоби́ли»",
+  "gram": "",
+  "en": "car sales firm",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "сли́вки",
+  "gram": "(gen. сли́вок)",
+  "en": "cream",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "таба́к",
+  "gram": "(gen. табака́)",
+  "en": "tobacco",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "таба́чная ла́вка",
+  "gram": "",
+  "en": "tobacconist",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "теле́жка",
+  "gram": "",
+  "en": "trolley",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "шоп",
+  "gram": "",
+  "en": "shop (usually selling high-class Western goods)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "а́кция",
+  "gram": "",
+  "en": "share",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "гарнизо́н",
+  "gram": "",
+  "en": "garrison",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "застро́енный райо́н",
+  "gram": "",
+  "en": "built-up area",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "при́городный посёлок",
+  "gram": "",
+  "en": "dormitory suburb",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "развя́зка",
+  "gram": "",
+  "en": "roundabout",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "ра́туша",
+  "gram": "",
+  "en": "town hall",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "служе́бная маши́на",
+  "gram": "",
+  "en": "service vehicle",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "сооруже́ние",
+  "gram": "",
+  "en": "construction",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "фо́ндовая би́ржа",
+  "gram": "",
+  "en": "stock exchange",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "часо́вня",
+  "gram": "",
+  "en": "chapel",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "барахо́лка",
+  "gram": "",
+  "en": "flea market",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "магази́н здоро́вого пита́ния",
+  "gram": "",
+  "en": "health food shop",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "вы́веска",
+  "gram": "",
+  "en": "sign",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "ларёк",
+  "gram": "(gen. ларька́)",
+  "en": "stall",
+  "unit": 1,
+  "level": "extra",
+  "section": "Towns",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "водопрово́дно- канализацио́нная сеть",
+  "gram": "(f.)",
+  "en": "plumbing",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "жили́щный ко́мплекс",
+  "gram": "",
+  "en": "housing estate",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "жильё",
+  "gram": "",
+  "en": "housing",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "надво́рная постро́йка",
+  "gram": "",
+  "en": "outbuilding",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "пристро́йка",
+  "gram": "",
+  "en": "extension",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "сбо́рный дом",
+  "gram": "",
+  "en": "pre-fab",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "сме́жный",
+  "gram": "",
+  "en": "adjacent",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "спа́ренный дом",
+  "gram": "",
+  "en": "semi-detached house",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "дива́н-крова́ть",
+  "gram": "",
+  "en": "sofa bed, bed-settee",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "му́сор",
+  "gram": "",
+  "en": "rubbish",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "почи́нка",
+  "gram": "",
+  "en": "repair",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "превраща́ть/преврати́ть",
+  "gram": "(превращу́ преврати́шь) (в + acc.)",
+  "en": "to convert (into)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "помеще́ние",
+  "gram": "",
+  "en": "room, premises",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "спуска́ть/спусти́ть",
+  "gram": "(спущу́ спу́стишь) во́ду в туале́те",
+  "en": "to flush the toilet",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "хлам",
+  "gram": "",
+  "en": "junk",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "электропрово́дка",
+  "gram": "",
+  "en": "wiring",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "деревя́нная обши́вка",
+  "gram": "",
+  "en": "panelling",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "карни́з",
+  "gram": "",
+  "en": "cornice",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "ко́врик",
+  "gram": "",
+  "en": "mat, rug",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "колоко́льня",
+  "gram": "",
+  "en": "belfry",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "коло́нна",
+  "gram": "",
+  "en": "column",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "крючо́к",
+  "gram": "(gen. крючка́)",
+  "en": "hook",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "свод",
+  "gram": "",
+  "en": "vault",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "фронто́н",
+  "gram": "",
+  "en": "gable",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "балюстра́да",
+  "gram": "",
+  "en": "balustrade",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "вера́нда",
+  "gram": "",
+  "en": "veranda",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "жалюзи́",
+  "gram": "(n. indecl.)",
+  "en": "Venetian blind",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "запа́сный вы́ход",
+  "gram": "",
+  "en": "emergency exit",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "кладова́я",
+  "gram": "(adj. noun)",
+  "en": "pantry",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "кося́к",
+  "gram": "(gen. косяка́)",
+  "en": "jamb",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "ле́стничная кле́тка",
+  "gram": "",
+  "en": "stairwell",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "люк",
+  "gram": "",
+  "en": "trapdoor",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "матра́с",
+  "gram": "",
+  "en": "mattress",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "око́нная ра́ма",
+  "gram": "",
+  "en": "window frame",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "пе́тля",
+  "gram": "",
+  "en": "hinge",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "печь",
+  "gram": "(f.) (в печи́, gen. pl. пече́й)",
+  "en": "stove",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "спу́тниковая анте́нна",
+  "gram": "",
+  "en": "satellite dish",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 36
+ },
+ {
+  "ru": "ста́вень",
+  "gram": "(m., gen. ста́вня)",
+  "en": "shutter",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "цвето́чный горшо́к",
+  "gram": "(gen. цвето́чного горшка́)",
+  "en": "flowerpot",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "черда́к",
+  "gram": "(на чердаке́)",
+  "en": "loft",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "электромонтёр",
+  "gram": "",
+  "en": "electrician",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "водосто́чная труба́",
+  "gram": "",
+  "en": "drainpipe",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "вытяжно́е устро́йство",
+  "gram": "",
+  "en": "extractor-fan",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "весы́",
+  "gram": "(gen. весо́в)",
+  "en": "scales",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "взве́шивать/взве́сить",
+  "gram": "(взве́шу взве́сишь)",
+  "en": "to weigh (transitive)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "графи́н",
+  "gram": "",
+  "en": "carafe, decanter",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "кастрю́ля для туше́ния",
+  "gram": "",
+  "en": "casserole",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "конфо́рка",
+  "gram": "",
+  "en": "oven ring",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "сосу́д",
+  "gram": "",
+  "en": "vessel",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "то́стер",
+  "gram": "",
+  "en": "toaster",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "утю́жить/от-",
+  "gram": "",
+  "en": "to press",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "бак",
+  "gram": "",
+  "en": "toilet cistern",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "биде́",
+  "gram": "(n. indecl.)",
+  "en": "bidet",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "ножна́я ва́нна",
+  "gram": "",
+  "en": "foot-bath",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "ковро́вое покры́тие",
+  "gram": "",
+  "en": "fitted carpet",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "шку́рка",
+  "gram": "",
+  "en": "sandpaper",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "шлифова́ть",
+  "gram": "(шлифу́ю шлифу́ешь)",
+  "en": "to polish",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "шуру́п",
+  "gram": "",
+  "en": "screw",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "двуспа́льная крова́ть",
+  "gram": "(f.)",
+  "en": "double bed",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "односпа́льная крова́ть",
+  "gram": "(f.)",
+  "en": "single bed",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "на́волочка",
+  "gram": "",
+  "en": "pillowslip",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "одея́ло-гре́лка",
+  "gram": "",
+  "en": "electric blanket",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "стоя́чая ла́мпа",
+  "gram": "",
+  "en": "standard lamp",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "арендо́ванная со́бственность",
+  "gram": "",
+  "en": "leasehold",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "владе́ние",
+  "gram": "(+ instr.)",
+  "en": "possession (of)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "закладна́я",
+  "gram": "(adj. noun)",
+  "en": "mortgage deed",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "по́лное пра́во на владе́ние",
+  "gram": "",
+  "en": "freehold",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "получа́ть/получи́ть заём под закладну́ю",
+  "gram": "",
+  "en": "to raise a mortgage",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "производи́ть/произвести́",
+  "gram": "(произведу́ произведёшь) осмо́тр (+ gen.)",
+  "en": "to carry out a survey (of)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "устано́вка",
+  "gram": "",
+  "en": "installation",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "чула́н",
+  "gram": "",
+  "en": "junk-room",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "компле́кт сто́ликов",
+  "gram": "",
+  "en": "nest of tables",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "раздвижно́й стол",
+  "gram": "",
+  "en": "extending table, leaf table",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "воздухоочисти́тель",
+  "gram": "(m.)",
+  "en": "extractor-fan",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "ку́хонная рукави́чка",
+  "gram": "",
+  "en": "oven glove",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "маслёнка",
+  "gram": "",
+  "en": "butter dish",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "мука́",
+  "gram": "",
+  "en": "flour",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "подлива́ть/подли́ть",
+  "gram": "(подолью́ подольёшь)",
+  "en": "to add (pouring)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "подста́вка",
+  "gram": "",
+  "en": "table mat",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "поло́вник",
+  "gram": "",
+  "en": "ladle",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "прихва́тки",
+  "gram": "(gen. прихва́ток)",
+  "en": "oven gloves",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "просе́ивать/просе́ять",
+  "gram": "(просе́ю просе́ешь) (муку́)",
+  "en": "to sieve, sift (flour)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "про́тивень",
+  "gram": "(gen. про́тивня)",
+  "en": "baking tray",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "сала́тник, сала́тница",
+  "gram": "",
+  "en": "salad bowl",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "си́то",
+  "gram": "",
+  "en": "sieve",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "сок",
+  "gram": "",
+  "en": "juice",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "соло́минка",
+  "gram": "",
+  "en": "drinking-straw",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "со́усник/со́усница",
+  "gram": "",
+  "en": "gravy boat",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "сы́пать",
+  "gram": "(сы́плю сы́плешь/сы́пнуть",
+  "en": "to pour (flour etc.)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "стелла́ж",
+  "gram": "(gen. стеллажа́)",
+  "en": "rack",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "су́пница",
+  "gram": "",
+  "en": "soup-tureen",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "та́ймер",
+  "gram": "",
+  "en": "timer, egg-timer",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "тёрка",
+  "gram": "",
+  "en": "grater",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "фольга́",
+  "gram": "",
+  "en": "tin foil",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "што́пор",
+  "gram": "",
+  "en": "corkscrew",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "щипцы́ для оре́хов",
+  "gram": "(gen. щипцо́в для оре́хов)",
+  "en": "nutcrackers",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "лак",
+  "gram": "",
+  "en": "furniture polish",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "масти́ка",
+  "gram": "",
+  "en": "floor polish",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "освежи́тель",
+  "gram": "(m.) во́здуха",
+  "en": "air freshener",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "отбе́ливатель",
+  "gram": "(m.)",
+  "en": "bleach",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "полова́я тря́пка",
+  "gram": "",
+  "en": "floor cloth",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "пятновыводи́тель",
+  "gram": "(m.)",
+  "en": "stain remover",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 37
+ },
+ {
+  "ru": "автофурго́н для перево́зки ме́бели",
+  "gram": "",
+  "en": "furniture van",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "замо́к",
+  "gram": "(gen. замка́)",
+  "en": "lock",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "звуконепроница́емый",
+  "gram": "",
+  "en": "soundproof",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "натира́ть/натере́ть",
+  "gram": "(натру́ натрёшь; натёр натёрла) (+ gen.)",
+  "en": "to grate (a quantity of)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "обива́ть/оби́ть",
+  "gram": "(обобью́ обобьёшь)",
+  "en": "to upholster",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "по́ртиться/ис-",
+  "gram": "",
+  "en": "to get spoilt",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "прище́пка",
+  "gram": "",
+  "en": "clothes peg",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "сливна́я труба́",
+  "gram": "",
+  "en": "overflow pipe",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "спа́льные принадле́жности",
+  "gram": "",
+  "en": "bedding",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "теплоизоля́ция",
+  "gram": "",
+  "en": "lagging",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "проже́ктор",
+  "gram": "",
+  "en": "spotlight",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "га́ечный ключ",
+  "gram": "(gen. га́ечного ключа́)",
+  "en": "spanner",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "га́йка",
+  "gram": "",
+  "en": "nut",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "долото́",
+  "gram": "",
+  "en": "chisel",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "зави́нчивать/завинти́ть",
+  "gram": "(завинчу́ завинти́шь)",
+  "en": "to tighten",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "полива́ть/поли́ть",
+  "gram": "(полью́ польёшь) из шла́нга",
+  "en": "to hose down",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "приви́нчивать/привинти́ть",
+  "gram": "(привинчу́ привинти́шь) (к)",
+  "en": "to screw (to)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "ба́лка",
+  "gram": "",
+  "en": "beam, girder",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "болт",
+  "gram": "(gen. болта́)",
+  "en": "bolt",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "брус",
+  "gram": "(pl. бру́сья бру́сьев)",
+  "en": "beam",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "ва́лик",
+  "gram": "",
+  "en": "roller",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "верёвка",
+  "gram": "",
+  "en": "rope",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "колоту́шка",
+  "gram": "",
+  "en": "mallet",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "лак",
+  "gram": "",
+  "en": "gloss paint",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "нажда́чная бума́га",
+  "gram": "",
+  "en": "sandpaper",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "пая́льник",
+  "gram": "",
+  "en": "soldering iron",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "пая́ть",
+  "gram": "",
+  "en": "to solder",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "пло́тник",
+  "gram": "",
+  "en": "carpenter",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "руба́нок",
+  "gram": "(gen. руба́нка)",
+  "en": "plane",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "сеть",
+  "gram": "(f.)",
+  "en": "electric circuit",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "скрепля́ть/скрепи́ть",
+  "gram": "(скреплю́ скрепи́шь)",
+  "en": "to bolt together",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "щети́на",
+  "gram": "",
+  "en": "bristle",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "отде́лка",
+  "gram": "",
+  "en": "decorating",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "отде́лывать/отде́лать",
+  "gram": "",
+  "en": "to do up",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "стро́йка",
+  "gram": "",
+  "en": "building site",
+  "unit": 1,
+  "level": "extra",
+  "section": "Housing",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "буто́н",
+  "gram": "",
+  "en": "bud (of flower)",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "гра́вий",
+  "gram": "",
+  "en": "gravel",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "доро́жное покры́тие",
+  "gram": "",
+  "en": "paving",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "нару́жный я́щик для цвето́в",
+  "gram": "",
+  "en": "window box",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "побе́г",
+  "gram": "",
+  "en": "shoot",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "подреза́ть/подре́зать",
+  "gram": "(подре́жу подре́жешь)",
+  "en": "to prune",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "доро́жка",
+  "gram": "",
+  "en": "path",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "плита́",
+  "gram": "(pl. пли́ты)",
+  "en": "(stone) slab",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "рыхли́ть/раз-",
+  "gram": "",
+  "en": "to loosen, rake",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "садо́вник",
+  "gram": "",
+  "en": "gardener",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "садо́вые но́жницы",
+  "gram": "",
+  "en": "shears",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "были́нка",
+  "gram": "",
+  "en": "blade of grass",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "вью́щееся расте́ние",
+  "gram": "",
+  "en": "climbing plant",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "льви́ный зев",
+  "gram": "",
+  "en": "snapdragon",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "гладио́лус",
+  "gram": "",
+  "en": "gladiolus",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "магно́лия",
+  "gram": "",
+  "en": "magnolia",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "георги́н",
+  "gram": "",
+  "en": "dahlia",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "орхиде́я",
+  "gram": "",
+  "en": "orchid",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "расса́да",
+  "gram": "",
+  "en": "seedlings",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "буке́т",
+  "gram": "",
+  "en": "bouquet",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "гиаци́нт",
+  "gram": "",
+  "en": "hyacinth",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "души́стый горо́шек",
+  "gram": "(gen. души́стого горо́шка)",
+  "en": "sweet pea",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "жёлтый нарци́сс",
+  "gram": "",
+  "en": "daffodil",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "лю́тик",
+  "gram": "",
+  "en": "buttercup",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "мости́ть",
+  "gram": "(мощу́ мости́шь/вы-",
+  "en": "to pave",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "насту́рция",
+  "gram": "",
+  "en": "nasturtium",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "ноготки́",
+  "gram": "(gen. ноготко́в)",
+  "en": "marigold",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 38
+ },
+ {
+  "ru": "первоцве́т",
+  "gram": "",
+  "en": "primrose",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "пио́н",
+  "gram": "",
+  "en": "peony",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "рома́шка",
+  "gram": "",
+  "en": "camomile",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "чертополо́х",
+  "gram": "",
+  "en": "thistle",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "аню́тины гла́зки",
+  "gram": "",
+  "en": "pansies",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "росто́к",
+  "gram": "(gen. ростка́)",
+  "en": "shoot",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "шип",
+  "gram": "(gen. шипа́)",
+  "en": "thorn",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "варе́нье",
+  "gram": "",
+  "en": "jam",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "сала́т",
+  "gram": "",
+  "en": "lettuce",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "чере́шня",
+  "gram": "",
+  "en": "cherry-tree",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "газонокоси́лка",
+  "gram": "",
+  "en": "lawnmower",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "пито́мник",
+  "gram": "",
+  "en": "nursery",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "со́лнечные часы́",
+  "gram": "(gen. со́лнечных часо́в)",
+  "en": "sundial",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "моты́жить",
+  "gram": "",
+  "en": "to hoe",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "компо́ст",
+  "gram": "",
+  "en": "compost",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "наво́з",
+  "gram": "",
+  "en": "manure",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "подра́внивать/подровня́ть",
+  "gram": "",
+  "en": "to level",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "разбры́згиватель",
+  "gram": "(m.)",
+  "en": "sprinkler",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "подстрига́ть/подстри́чь",
+  "gram": "(подстригу́ подстрижёшь; подстри́г подстри́гла)",
+  "en": "to clip",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "привива́ть/приви́ть",
+  "gram": "(привью́ привьёшь)",
+  "en": "to graft",
+  "unit": 1,
+  "level": "extra",
+  "section": "Garden",
+  "sub": "",
+  "page": 39
+ },
+ {
+  "ru": "бе́рег",
+  "gram": "(на берегу́) (pl. берега́)",
+  "en": "bank, shore",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "вода́",
+  "gram": "(acc. во́ду) (pl. во́ды)",
+  "en": "water",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "волна́",
+  "gram": "(pl. во́лны волн)",
+  "en": "wave",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "впада́ть",
+  "gram": "(в + acc.)",
+  "en": "to empty (into)",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "мо́ре",
+  "gram": "(pl. моря́ море́й)",
+  "en": "sea",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "о́зеро",
+  "gram": "(pl. озёра озёр)",
+  "en": "lake",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "океа́н",
+  "gram": "",
+  "en": "ocean",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "о́стров",
+  "gram": "(pl. острова́)",
+  "en": "island",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "побере́жье",
+  "gram": "",
+  "en": "coast",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "река́",
+  "gram": "(acc. ре́ку) (pl. ре́ки рек ре́кам)",
+  "en": "river",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "тече́ние",
+  "gram": "",
+  "en": "current",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 40
+ },
+ {
+  "ru": "верши́на",
+  "gram": "",
+  "en": "peak",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 40
+ },
+ {
+  "ru": "гора́",
+  "gram": "(acc. го́ру) (pl. го́ры гор гора́м)",
+  "en": "mountain",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 40
+ },
+ {
+  "ru": "доли́на",
+  "gram": "",
+  "en": "valley",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 40
+ },
+ {
+  "ru": "равни́на",
+  "gram": "",
+  "en": "plain",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 40
+ },
+ {
+  "ru": "скала́",
+  "gram": "(pl. ска́лы)",
+  "en": "rock",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 40
+ },
+ {
+  "ru": "холм",
+  "gram": "(gen. холма́)",
+  "en": "hill",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 40
+ },
+ {
+  "ru": "берёза",
+  "gram": "",
+  "en": "birch",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation",
+  "page": 41
+ },
+ {
+  "ru": "бук",
+  "gram": "",
+  "en": "beech",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation",
+  "page": 41
+ },
+ {
+  "ru": "де́рево",
+  "gram": "(pl. дере́вья дере́вьев)",
+  "en": "tree",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation",
+  "page": 41
+ },
+ {
+  "ru": "дуб",
+  "gram": "(pl. дубы́ дубо́в)",
+  "en": "oak",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation",
+  "page": 41
+ },
+ {
+  "ru": "ель",
+  "gram": "(f.)",
+  "en": "fir",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation",
+  "page": 41
+ },
+ {
+  "ru": "лес",
+  "gram": "(в лесу́) (pl. леса́)",
+  "en": "forest",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation",
+  "page": 41
+ },
+ {
+  "ru": "по́ле",
+  "gram": "(pl. поля́ поле́й)",
+  "en": "field",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation",
+  "page": 41
+ },
+ {
+  "ru": "сосна́",
+  "gram": "(pl. со́сны со́сен)",
+  "en": "pine",
+  "unit": 2,
+  "level": 1,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation",
+  "page": 41
+ },
+ {
+  "ru": "ба́бочка",
+  "gram": "",
+  "en": "butterfly",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Insects",
+  "page": 41
+ },
+ {
+  "ru": "жук",
+  "gram": "(gen. жука́)",
+  "en": "beetle",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Insects",
+  "page": 41
+ },
+ {
+  "ru": "му́ха",
+  "gram": "",
+  "en": "fly",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Insects",
+  "page": 41
+ },
+ {
+  "ru": "пау́к",
+  "gram": "(gen. паука́)",
+  "en": "spider",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Insects",
+  "page": 41
+ },
+ {
+  "ru": "пчела́",
+  "gram": "(pl. пчёлы)",
+  "en": "bee",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Insects",
+  "page": 41
+ },
+ {
+  "ru": "бык",
+  "gram": "(gen. быка́)",
+  "en": "bull",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 41
+ },
+ {
+  "ru": "волк, волчи́ца",
+  "gram": "",
+  "en": "wolf (волчо́нок ‘wolf cub’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 41
+ },
+ {
+  "ru": "детёныш",
+  "gram": "",
+  "en": "young of an animal",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 41
+ },
+ {
+  "ru": "козёл",
+  "gram": "(gen. козла́), коза́ (pl. ко́зы)",
+  "en": "goat (козлёнок ‘kid’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 41
+ },
+ {
+  "ru": "коро́ва",
+  "gram": "",
+  "en": "cow (телёнок ‘calf’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 41
+ },
+ {
+  "ru": "кот",
+  "gram": "(gen. кота́), ко́шка",
+  "en": "cat (котёнок ‘kitten’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 41
+ },
+ {
+  "ru": "ло́шадь",
+  "gram": "(f.) (pl. ло́шади лошаде́й)",
+  "en": "horse (жеребёнок ‘foal’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 41
+ },
+ {
+  "ru": "медве́дь, медве́дица",
+  "gram": "",
+  "en": "bear (медвежо́нок ‘bear cub’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 41
+ },
+ {
+  "ru": "овца́",
+  "gram": "(pl. о́вцы ове́ц о́вцам)",
+  "en": "sheep (ягнёнок ‘lamb’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 41
+ },
+ {
+  "ru": "свинья́",
+  "gram": "(pl. сви́ньи свине́й сви́ньям)",
+  "en": "pig (поросёнок ‘piglet’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 42
+ },
+ {
+  "ru": "соба́ка",
+  "gram": "",
+  "en": "dog (щено́к ‘puppy’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Mammals",
+  "page": 42
+ },
+ {
+  "ru": "воробе́й",
+  "gram": "(gen. воробья́)",
+  "en": "sparrow",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Birds",
+  "page": 42
+ },
+ {
+  "ru": "гусь",
+  "gram": "(m.) (pl. гу́си гусе́й)",
+  "en": "goose (гусёнок ‘gosling’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Birds",
+  "page": 42
+ },
+ {
+  "ru": "ку́рица",
+  "gram": "(pl. ку́ры)",
+  "en": "chicken (цыплёнок ‘chick’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Birds",
+  "page": 42
+ },
+ {
+  "ru": "ле́бедь",
+  "gram": "(m.) (pl. ле́беди лебеде́й)",
+  "en": "swan",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Birds",
+  "page": 42
+ },
+ {
+  "ru": "орёл",
+  "gram": "(gen. орла́)",
+  "en": "eagle (орлёнок ‘eaglet’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Birds",
+  "page": 42
+ },
+ {
+  "ru": "пету́х",
+  "gram": "(gen. петуха́)",
+  "en": "cockerel",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Birds",
+  "page": 42
+ },
+ {
+  "ru": "пти́ца",
+  "gram": "(dim. пти́чка)",
+  "en": "bird (птене́ц ‘fledgeling’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Birds",
+  "page": 42
+ },
+ {
+  "ru": "у́тка",
+  "gram": "",
+  "en": "duck (утёнок ‘duckling’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Birds",
+  "page": 42
+ },
+ {
+  "ru": "аку́ла",
+  "gram": "",
+  "en": "shark",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Fish",
+  "page": 42
+ },
+ {
+  "ru": "лосо́сь",
+  "gram": "(m.)",
+  "en": "salmon",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Fish",
+  "page": 42
+ },
+ {
+  "ru": "ры́ба",
+  "gram": "",
+  "en": "fish",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Fish",
+  "page": 42
+ },
+ {
+  "ru": "селёдка",
+  "gram": "",
+  "en": "herring",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Fish",
+  "page": 42
+ },
+ {
+  "ru": "змея́",
+  "gram": "(pl. зме́и)",
+  "en": "snake",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Reptiles, molluscs, crustaceans, and amphibians",
+  "page": 42
+ },
+ {
+  "ru": "краб",
+  "gram": "",
+  "en": "crab",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Reptiles, molluscs, crustaceans, and amphibians",
+  "page": 42
+ },
+ {
+  "ru": "выть",
+  "gram": "(во́ет)",
+  "en": "to howl",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Behaviour/sounds",
+  "page": 43
+ },
+ {
+  "ru": "ла́ять",
+  "gram": "(ла́ет)/про-",
+  "en": "to bark",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Behaviour/sounds",
+  "page": 43
+ },
+ {
+  "ru": "лета́ть/лете́ть",
+  "gram": "(лети́т)",
+  "en": "to fly",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Behaviour/sounds",
+  "page": 43
+ },
+ {
+  "ru": "мурлы́кать",
+  "gram": "(мурлы́чет)",
+  "en": "to purr",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Behaviour/sounds",
+  "page": 43
+ },
+ {
+  "ru": "петь",
+  "gram": "(поёт)/с-",
+  "en": "to sing",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Behaviour/sounds",
+  "page": 43
+ },
+ {
+  "ru": "пла́вать/плыть",
+  "gram": "(плыву́ плывёшь)",
+  "en": "to swim, float",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Behaviour/sounds",
+  "page": 43
+ },
+ {
+  "ru": "по́лзать/ползти́",
+  "gram": "(ползёт) (полз ползла́)",
+  "en": "to crawl",
+  "unit": 2,
+  "level": 1,
+  "section": "The animal world",
+  "sub": "Behaviour/sounds",
+  "page": 43
+ },
+ {
+  "ru": "це́льсий",
+  "gram": "",
+  "en": "Celsius",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "General",
+  "page": 43
+ },
+ {
+  "ru": "бу́ря",
+  "gram": "",
+  "en": "storm",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Storms, rain, wind",
+  "page": 43
+ },
+ {
+  "ru": "ве́тер",
+  "gram": "(gen. ве́тра)",
+  "en": "wind (на ветру́ ‘in the wind’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Storms, rain, wind",
+  "page": 43
+ },
+ {
+  "ru": "гром",
+  "gram": "",
+  "en": "thunder",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Storms, rain, wind",
+  "page": 43
+ },
+ {
+  "ru": "дождь",
+  "gram": "(m.) (gen. дождя́)",
+  "en": "rain (под дождём ‘in the rain’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Storms, rain, wind",
+  "page": 43
+ },
+ {
+  "ru": "дуть",
+  "gram": "(ду́ет)/по-",
+  "en": "to blow",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Storms, rain, wind",
+  "page": 43
+ },
+ {
+  "ru": "мо́крый",
+  "gram": "",
+  "en": "wet (мо́кро ‘it is wet’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Storms, rain, wind",
+  "page": 43
+ },
+ {
+  "ru": "мо́лния",
+  "gram": "",
+  "en": "lightning",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Storms, rain, wind",
+  "page": 43
+ },
+ {
+  "ru": "не́бо",
+  "gram": "",
+  "en": "sky",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Storms, rain, wind",
+  "page": 43
+ },
+ {
+  "ru": "сыро́й",
+  "gram": "",
+  "en": "damp (сы́ро ‘it is damp’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Storms, rain, wind",
+  "page": 43
+ },
+ {
+  "ru": "тума́н",
+  "gram": "",
+  "en": "mist",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Storms, rain, wind",
+  "page": 43
+ },
+ {
+  "ru": "жара́",
+  "gram": "",
+  "en": "heat",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Ice and snow, clouds, sunshine",
+  "page": 43
+ },
+ {
+  "ru": "лёд",
+  "gram": "(gen. льда)",
+  "en": "ice (на льду́ ‘on the ice’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Ice and snow, clouds, sunshine",
+  "page": 43
+ },
+ {
+  "ru": "моро́з",
+  "gram": "",
+  "en": "frost",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Ice and snow, clouds, sunshine",
+  "page": 43
+ },
+ {
+  "ru": "о́блако",
+  "gram": "(pl. облака́ облако́в)",
+  "en": "cloud",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Ice and snow, clouds, sunshine",
+  "page": 43
+ },
+ {
+  "ru": "снег",
+  "gram": "(pl. снега́)",
+  "en": "snow",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Ice and snow, clouds, sunshine",
+  "page": 43
+ },
+ {
+  "ru": "со́лнце",
+  "gram": "",
+  "en": "sun (на со́лнце ‘in the sun’)",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Ice and snow, clouds, sunshine",
+  "page": 44
+ },
+ {
+  "ru": "хо́лод",
+  "gram": "",
+  "en": "cold",
+  "unit": 2,
+  "level": 1,
+  "section": "The weather",
+  "sub": "Ice and snow, clouds, sunshine",
+  "page": 44
+ },
+ {
+  "ru": "боло́то",
+  "gram": "",
+  "en": "bog",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 49
+ },
+ {
+  "ru": "бу́хта",
+  "gram": "",
+  "en": "bay",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 49
+ },
+ {
+  "ru": "дно",
+  "gram": "",
+  "en": "bottom",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 49
+ },
+ {
+  "ru": "зали́в",
+  "gram": "",
+  "en": "gulf",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 49
+ },
+ {
+  "ru": "пруд",
+  "gram": "(gen. пруда́) (в/на пруду́)",
+  "en": "pond",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 49
+ },
+ {
+  "ru": "су́ша",
+  "gram": "",
+  "en": "dry land",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 49
+ },
+ {
+  "ru": "у́стье",
+  "gram": "",
+  "en": "mouth (of river)",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Sea, rivers",
+  "page": 49
+ },
+ {
+  "ru": "вулка́н",
+  "gram": "",
+  "en": "volcano",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 49
+ },
+ {
+  "ru": "круто́й",
+  "gram": "",
+  "en": "steep",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 49
+ },
+ {
+  "ru": "лави́на",
+  "gram": "",
+  "en": "avalanche",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 49
+ },
+ {
+  "ru": "пеще́ра",
+  "gram": "",
+  "en": "cave",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 49
+ },
+ {
+  "ru": "хребе́т",
+  "gram": "",
+  "en": "range",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Mountains, hills, rocks",
+  "page": 49
+ },
+ {
+  "ru": "ве́тка/ветвь",
+  "gram": "(f.)",
+  "en": "branch",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation, terrain",
+  "page": 49
+ },
+ {
+  "ru": "верху́шка",
+  "gram": "",
+  "en": "tree-top",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation, terrain",
+  "page": 49
+ },
+ {
+  "ru": "гриб",
+  "gram": "(gen. гриба́)",
+  "en": "mushroom",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation, terrain",
+  "page": 49
+ },
+ {
+  "ru": "и́ва",
+  "gram": "(dim. и́вушка)",
+  "en": "willow",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation, terrain",
+  "page": 49
+ },
+ {
+  "ru": "куст",
+  "gram": "(gen. куста́)",
+  "en": "bush",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation, terrain",
+  "page": 49
+ },
+ {
+  "ru": "луг",
+  "gram": "(на лугу́) (pl. луга́)",
+  "en": "meadow",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation, terrain",
+  "page": 49
+ },
+ {
+  "ru": "оре́х",
+  "gram": "",
+  "en": "nut",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation, terrain",
+  "page": 49
+ },
+ {
+  "ru": "ствол",
+  "gram": "(gen. ствола́)",
+  "en": "trunk",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation, terrain",
+  "page": 49
+ },
+ {
+  "ru": "я́года",
+  "gram": "",
+  "en": "berry",
+  "unit": 2,
+  "level": 2,
+  "section": "Natural features",
+  "sub": "Woodland, vegetation, terrain",
+  "page": 49
+ },
+ {
+  "ru": "гу́сеница",
+  "gram": "",
+  "en": "caterpillar",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Insects",
+  "page": 50
+ },
+ {
+  "ru": "мураве́й",
+  "gram": "(gen. муравья́)",
+  "en": "ant",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Insects",
+  "page": 50
+ },
+ {
+  "ru": "насеко́мое",
+  "gram": "(adj. noun)",
+  "en": "insect",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Insects",
+  "page": 50
+ },
+ {
+  "ru": "оса́",
+  "gram": "(pl. о́сы)",
+  "en": "wasp",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Insects",
+  "page": 50
+ },
+ {
+  "ru": "стрекоза́",
+  "gram": "(pl. стреко́зы)",
+  "en": "dragonfly",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Insects",
+  "page": 50
+ },
+ {
+  "ru": "бе́лка",
+  "gram": "",
+  "en": "squirrel",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "верблю́д",
+  "gram": "",
+  "en": "camel",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "ёж",
+  "gram": "(gen. ежа́)",
+  "en": "hedgehog",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "за́яц",
+  "gram": "(gen. за́йца)",
+  "en": "hare",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "зверь",
+  "gram": "(m.) (pl. зве́ри звере́й)",
+  "en": "wild animal",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "каба́н",
+  "gram": "(gen. кабана́)",
+  "en": "wild boar",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "кро́лик",
+  "gram": "",
+  "en": "rabbit",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "крот",
+  "gram": "(gen. крота́)",
+  "en": "mole",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "кры́са",
+  "gram": "",
+  "en": "rat",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "лев",
+  "gram": "(gen. льва), льви́ца",
+  "en": "lion(ess) (львёнок ‘lion cub’)",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "мышь",
+  "gram": "(f.)",
+  "en": "mouse",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "осёл, осли́ца",
+  "gram": "",
+  "en": "donkey (ослёнок ‘donkey foal’)",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "слон",
+  "gram": "(gen. слона́), слони́ха",
+  "en": "elephant (слонёнок ‘elephant calf’)",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "тигр, тигри́ца",
+  "gram": "",
+  "en": "tiger(-gress) (тигрёнок ‘tiger cub’)",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "хвост",
+  "gram": "(gen. хвоста́)",
+  "en": "tail",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "шку́ра",
+  "gram": "",
+  "en": "skin, pelt, hide",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Mammals",
+  "page": 50
+ },
+ {
+  "ru": "воро́на",
+  "gram": "",
+  "en": "crow",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Birds",
+  "page": 51
+ },
+ {
+  "ru": "го́лубь",
+  "gram": "(m.) (pl. го́луби голубе́й)",
+  "en": "pigeon, dove",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Birds",
+  "page": 51
+ },
+ {
+  "ru": "грач",
+  "gram": "(gen. грача́)",
+  "en": "rook",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Birds",
+  "page": 51
+ },
+ {
+  "ru": "крыло́",
+  "gram": "(pl. кры́лья кры́льев)",
+  "en": "wing",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Birds",
+  "page": 51
+ },
+ {
+  "ru": "ла́сточка",
+  "gram": "",
+  "en": "swallow",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Birds",
+  "page": 51
+ },
+ {
+  "ru": "попуга́й",
+  "gram": "",
+  "en": "parrot",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Birds",
+  "page": 51
+ },
+ {
+  "ru": "скворе́ц",
+  "gram": "(gen. скворца́)",
+  "en": "starling",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Birds",
+  "page": 51
+ },
+ {
+  "ru": "сова́",
+  "gram": "(pl. со́вы)",
+  "en": "owl",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Birds",
+  "page": 51
+ },
+ {
+  "ru": "солове́й",
+  "gram": "(gen. соловья́)",
+  "en": "nightingale",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Birds",
+  "page": 51
+ },
+ {
+  "ru": "ча́йка",
+  "gram": "",
+  "en": "seagull",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Birds",
+  "page": 51
+ },
+ {
+  "ru": "треска́",
+  "gram": "",
+  "en": "cod",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Fish",
+  "page": 51
+ },
+ {
+  "ru": "форе́ль",
+  "gram": "(f.)",
+  "en": "trout",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Fish",
+  "page": 51
+ },
+ {
+  "ru": "щу́ка",
+  "gram": "",
+  "en": "pike",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Fish",
+  "page": 51
+ },
+ {
+  "ru": "жа́ба",
+  "gram": "",
+  "en": "toad",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Reptiles, amphibians, molluscs and crustaceans",
+  "page": 51
+ },
+ {
+  "ru": "крокоди́л",
+  "gram": "",
+  "en": "crocodile",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Reptiles, amphibians, molluscs and crustaceans",
+  "page": 51
+ },
+ {
+  "ru": "лягу́шка",
+  "gram": "",
+  "en": "frog",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Reptiles, amphibians, molluscs and crustaceans",
+  "page": 51
+ },
+ {
+  "ru": "рак",
+  "gram": "",
+  "en": "crayfish",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Reptiles, amphibians, molluscs and crustaceans",
+  "page": 51
+ },
+ {
+  "ru": "ули́тка",
+  "gram": "",
+  "en": "snail",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Reptiles, amphibians, molluscs and crustaceans",
+  "page": 51
+ },
+ {
+  "ru": "черепа́ха",
+  "gram": "",
+  "en": "tortoise",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Reptiles, amphibians, molluscs and crustaceans",
+  "page": 51
+ },
+ {
+  "ru": "я́щерица",
+  "gram": "",
+  "en": "lizard",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Reptiles, amphibians, molluscs and crustaceans",
+  "page": 51
+ },
+ {
+  "ru": "гнездо́",
+  "gram": "(pl. гнёзда)",
+  "en": "nest",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Homes and dens",
+  "page": 52
+ },
+ {
+  "ru": "конура́",
+  "gram": "",
+  "en": "kennel",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Homes and dens",
+  "page": 52
+ },
+ {
+  "ru": "нора́",
+  "gram": "(pl. но́ры)",
+  "en": "burrow",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Homes and dens",
+  "page": 52
+ },
+ {
+  "ru": "у́лей",
+  "gram": "(gen. у́лья)",
+  "en": "hive",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Homes and dens",
+  "page": 52
+ },
+ {
+  "ru": "вить",
+  "gram": "(вьёт)/с- (гнездо́)",
+  "en": "to make, build (a nest)",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Поведе́ниеживо́тных Animal behaviour",
+  "page": 52
+ },
+ {
+  "ru": "ворча́ть",
+  "gram": "(ворчи́т)",
+  "en": "to growl",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Поведе́ниеживо́тных Animal behaviour",
+  "page": 52
+ },
+ {
+  "ru": "жа́лить/у-",
+  "gram": "",
+  "en": "to sting",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Поведе́ниеживо́тных Animal behaviour",
+  "page": 52
+ },
+ {
+  "ru": "ка́ркать",
+  "gram": "",
+  "en": "to caw",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Поведе́ниеживо́тных Animal behaviour",
+  "page": 52
+ },
+ {
+  "ru": "клева́ть",
+  "gram": "(клюёт)/клю́нуть",
+  "en": "to peck",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Поведе́ниеживо́тных Animal behaviour",
+  "page": 52
+ },
+ {
+  "ru": "лиза́ть",
+  "gram": "(ли́жет)/лизну́ть",
+  "en": "to lick",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Поведе́ниеживо́тных Animal behaviour",
+  "page": 52
+ },
+ {
+  "ru": "шипе́ть",
+  "gram": "(шипи́т)",
+  "en": "to hiss",
+  "unit": 2,
+  "level": 2,
+  "section": "Animal world",
+  "sub": "Поведе́ниеживо́тных Animal behaviour",
+  "page": 52
+ },
+ {
+  "ru": "прогно́з пого́ды",
+  "gram": "",
+  "en": "weather forecast",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "General",
+  "page": 52
+ },
+ {
+  "ru": "термо́метр",
+  "gram": "",
+  "en": "thermometer",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "General",
+  "page": 52
+ },
+ {
+  "ru": "тропи́ческий",
+  "gram": "",
+  "en": "tropical",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "General",
+  "page": 52
+ },
+ {
+  "ru": "град",
+  "gram": "",
+  "en": "hail",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "Rain, wind, hail, ice, snow",
+  "page": 52
+ },
+ {
+  "ru": "гроза́",
+  "gram": "",
+  "en": "thunderstorm",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "Rain, wind, hail, ice, snow",
+  "page": 52
+ },
+ {
+  "ru": "замерза́ть/замёрзнуть",
+  "gram": "(past замёрз замёрзла)",
+  "en": "to freeze (замёрзший ‘frozen’)",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "Rain, wind, hail, ice, snow",
+  "page": 52
+ },
+ {
+  "ru": "лу́жа",
+  "gram": "",
+  "en": "puddle",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "Rain, wind, hail, ice, snow",
+  "page": 52
+ },
+ {
+  "ru": "мете́ль",
+  "gram": "(f.)",
+  "en": "snowstorm",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "Rain, wind, hail, ice, snow",
+  "page": 52
+ },
+ {
+  "ru": "отта́ивать/отта́ять",
+  "gram": "(отта́ет)",
+  "en": "to thaw",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "Rain, wind, hail, ice, snow",
+  "page": 52
+ },
+ {
+  "ru": "сугро́б",
+  "gram": "",
+  "en": "snowdrift",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "Rain, wind, hail, ice, snow",
+  "page": 52
+ },
+ {
+  "ru": "уме́ренный",
+  "gram": "",
+  "en": "moderate",
+  "unit": 2,
+  "level": 2,
+  "section": "Weather",
+  "sub": "Rain, wind, hail, ice, snow",
+  "page": 52
+ }
+]
